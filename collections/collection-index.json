@@ -1,0 +1,39 @@
+{
+    "name": "MITRE ATT&CK", 
+    "modified": "2020-10-30T19:15:30.610172Z", 
+    "description": "All ATT&CK datasets",
+    "created": "2020-10-30T19:15:30.610172Z", 
+    "collections": [
+        {
+            "versions": [
+                {
+                    "url": "https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v8.0/enterprise-attack/enterprise-attack.json", 
+                    "version": "8.0.0", 
+                    "modified": "2020-10-30T18:16:52.896157Z"
+                }, 
+                {
+                    "url": "https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v7.2/enterprise-attack/enterprise-attack.json", 
+                    "version": "7.2.0", 
+                    "modified": "2020-10-30T18:16:47.536219Z"
+                }
+            ], 
+            "description": "The Enterprise domain of the ATT&CK dataset", 
+            "created": "2020-10-30T18:16:52.896157Z", 
+            "id": "x-mitre-collection--0bbd7841-f053-471a-9900-da4af02e40c2", 
+            "name": "Enterprise ATT&CK"
+        }, 
+        {
+            "versions": [
+                {
+                    "url": "https://raw.githubusercontent.com/mitre/cti/ATT%26CK-v8.0/mobile-attack/mobile-attack.json", 
+                    "version": "8.0.0", 
+                    "modified": "2020-10-30T18:16:58.737570Z"
+                }
+            ], 
+            "description": "The Mobile domain of the ATT&CK dataset", 
+            "created": "2020-10-30T18:16:58.737570Z", 
+            "id": "x-mitre-collection--915b6504-bde8-40b5-bfda-0c3ecb46a9b9", 
+            "name": "Mobile ATT&CK"
+        }
+    ]
+}
