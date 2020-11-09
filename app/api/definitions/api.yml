@@ -1,0 +1,64 @@
+openapi: 3.0.2
+info:
+  title: Federated ATT&CK Collection Manager
+  version: 0.0.1
+servers:
+  - url: '{protocol}://{hostname}:{port}/'
+    variables:
+      protocol:
+        default: 'http'
+      hostname:
+        default: '::'
+      port:
+        default: '3000'
+
+tags:
+  - name: Subscriptions
+    description: 'Operations on subscriptions.'
+  - name: Collection Indexes
+    description: 'Operations on collection indexes.'
+  - name: Collections
+    description: 'Operations on collections.'
+
+paths:
+  /api/subscriptions:
+    get:
+      summary: 'Retrieve subscriptions'
+      operationId: subscriptions-get-all
+      description: 'This endpoint retrieves multiple subscription objects.'
+      tags:
+        - Subscriptions
+      responses:
+        '200':
+          description: 'A list of subscriptions.'
+
+  /api/collection-indexes:
+    get:
+      summary: 'Retrieve collection indexes'
+      operationId: collection-indexes-get-all
+      description: 'This endpoint retrieves multiple collection index objects.'
+      tags:
+        - Collection Indexes
+      responses:
+        '200':
+          description: 'A list of collection indexes.'
+
+  /api/collections:
+    get:
+      summary: 'Retrieve collections'
+      operationId: collections-get-all
+      description: 'This endpoint retrieves multiple collection objects.'
+      tags:
+        - Collections
+      responses:
+        '200':
+          description: 'A list of collections.'
+    post:
+      summary: 'Import a collection'
+      operationId: 'collections-import'
+      description: 'This endpoint imports a collection into the workspace.'
+      tags:
+        - Collections
+      responses:
+        '201':
+          description: 'The collection has been successfully imported.'

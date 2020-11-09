@@ -3,6 +3,38 @@
 - Federated ATT&CK Collection Manager: REST API and CLI for managing collections.
 - [Federated ATT&CK REST API](https://github.com/center-for-threat-informed-defense/federated-attack-rest-api): REST API service for storing, querying and editing ATT&CK objects.
 
+## Scripts
+
+`package.json` contains a number of scripts that can be used to perform recurring tasks.
+
+### JavaScript Linter
+
+Use the command:
+
+`npm run lint`
+
+to run ESLint on the codebase.
+
+### Validate Module Versions
+
+Use the command
+
+`npm run snyk`
+
+to run the Snyk validator on the currently installed modules.
+This will check the modules for known security flaws.
+
+Note that this requires the `SNYK_TOKEN` environment variable to be set to a valid Snyk token to run.
+
+### Generate REST API Documentation
+
+The REST API is defined using OpenAPI.
+Use the command:
+
+`npm run api:generate-all`
+
+to generate the website that documents the REST API.
+
 ## Notice 
 
 Copyright 2020 MITRE Engenuity. Approved for public release. 
