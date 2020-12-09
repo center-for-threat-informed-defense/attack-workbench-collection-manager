@@ -2,7 +2,7 @@
 
 exports.initializeApp = function() {
     const logger = require('./lib/logger');
-    logger.info('Federated ATT&CK Collection Manager app starting');
+    logger.info('ATT&CK Workbench Collection Manager app starting');
 
     // Configure the app
     logger.info('Configuring the app');
@@ -30,6 +30,7 @@ exports.initializeApp = function() {
 
     // Set up the static routes
     app.use(express.static('public'));
+    app.use('/collections', express.static('collections'))
 
     // Set up the api routes
     logger.info('Creating the routes');

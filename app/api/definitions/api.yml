@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: Federated ATT&CK Collection Manager
+  title: ATT&CK Workbench Collection Manager
   version: 0.0.1
 servers:
   - url: '{protocol}://{hostname}:{port}/'

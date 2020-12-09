@@ -1,7 +1,7 @@
 {
-  "name": "federated-attack-collection-manager",
+  "name": "attack-workbench-collection-manager",
   "version": "0.0.0",
-  "description": "Collection Manager for the ATT&CK Workspace.",
+  "description": "Collection Manager for the ATT&CK Workbench.",
   "main": "index.js",
   "scripts": {
     "api:generate-md": "widdershins ./app/api/definitions/api.yml -o ./app/api/markdown/api.md --summary",
