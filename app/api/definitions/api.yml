@@ -42,6 +42,24 @@ paths:
       responses:
         '200':
           description: 'A list of collection indexes.'
+    
+  /api/collection-indexes/remote:
+    get:
+      summary: 'Retrieve collection index by URL'
+      operationId: collection-indexes-get-by-url
+      description: 'This endpoint retrieves the collection index at the given URL.'
+      tags:
+        - Collection Indexes
+      parameters:
+        - name: url
+          in: query
+          description: |
+            The URL from which to retrieve the collection index.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'A collection index.'
 
   /api/collections:
     get:
