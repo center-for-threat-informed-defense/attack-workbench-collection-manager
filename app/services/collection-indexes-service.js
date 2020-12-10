@@ -2,7 +2,8 @@
 const https = require('https');
 const logger = require('../lib/logger');
 const errors = {
-    missingParameter: 'Missing required parameter'
+    missingParameter: 'Missing required parameter',
+    invalidURL: 'Badly formatted URL'
 };
 exports.errors = errors;
 
@@ -17,20 +18,21 @@ exports.retrieveByUrl = function(url, callback) {
         return callback(error);
     }
 
-    const encodeURL = encodeURI(url);
     const request = https.request(url, (res) => { 
         let data = "";
-        res.on('data', (d) => { 
-            data = data + d.toString(); 
+        res.on('data', (chunk) => { 
+            data += chunk.toString(); 
         }); 
-
-        res.on('end', () => { 
-            const body = JSON.parse(data);
-            return callback(null, body);
+        res.on('end', () => {
+            try {
+                const body = JSON.parse(data);
+                return callback(null, body);
+            } catch(error) {
+                error = new Error(errors.invalidURL);
+                return callback(error);
+            }
         }); 
-    }) 
-      
-    request.on('error', (error) => { 
+    }).on('error', (error) => { 
         return callback(error);
     }); 
       
