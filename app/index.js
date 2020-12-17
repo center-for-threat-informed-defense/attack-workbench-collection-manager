@@ -26,6 +26,9 @@ exports.initializeApp = function() {
         logger.info('Enabling HTTP request logging');
         const morgan = require('morgan');
         app.use(morgan('dev', { stream: logger.stream }));
+        
+        // DO NOT ALLOW TO GO TO PRODUCTION
+        process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
     }
 
     // Set up the static routes

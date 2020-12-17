@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const OpenApiValidator = require('express-openapi-validator');
 const subscriptionsRoutes = require('./subscriptions-routes');
+const collectionIndexesRoutes = require('./collection-indexes-routes');
 const errorHandler = require('../lib/error-handler');
 const logger = require('../lib/logger');
 
@@ -27,6 +28,7 @@ try {
 
 // Set up the routes
 router.use('/api', subscriptionsRoutes);
+router.use('/api', collectionIndexesRoutes);
 
 // Handle errors that haven't otherwise been caught
 router.use(errorHandler.bodyParser);
