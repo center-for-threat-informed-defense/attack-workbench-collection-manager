@@ -1,9 +1,11 @@
 'use strict';
-const https = require('https');
-const logger = require('../lib/logger');
+
+const superagent = require('superagent');
 const errors = {
     missingParameter: 'Missing required parameter',
-    invalidURL: 'Badly formatted URL'
+    badRequest: 'Bad request',
+    invalidFormat: 'Invalid format',
+    notFound: 'Not found'
 };
 exports.errors = errors;
 
@@ -14,27 +16,27 @@ exports.retrieveAll = function(callback) {
 
 exports.retrieveByUrl = function(url, callback) {
     if (!url) {
-        const error = new Error(errors.missingParameter)
+        const error = new Error(errors.missingParameter);
         return callback(error);
     }
 
-    const request = https.request(url, (res) => { 
-        let data = "";
-        res.on('data', (chunk) => { 
-            data += chunk.toString(); 
-        }); 
-        res.on('end', () => {
-            try {
-                const body = JSON.parse(data);
-                return callback(null, body);
-            } catch(error) {
-                error = new Error(errors.invalidURL);
-                return callback(error);
-            }
-        }); 
-    }).on('error', (error) => { 
-        return callback(error);
-    }); 
-      
-    request.end()
+    superagent.get(url).then(res => {
+        try {
+            const body = JSON.parse(res.text);
+            return callback(null, body);
+        } catch (err) {
+            const error = new Error(errors.invalidFormat);
+            return callback(error);
+        }
+    }).catch(err => {
+        if (err.response.notFound) {
+            const error = new Error(errors.notFound);
+            return callback(error);
+        } else if (err.response.badRequest) {
+            const error = new Error(errors.badRequest);
+            return callback(error);
+        } else {
+            return callback(err)
+        }
+    });
 };
