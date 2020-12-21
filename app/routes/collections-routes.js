@@ -7,6 +7,9 @@ const router = express.Router();
 
 router.route('/collections')
     .get(collectionsController.retrieveAll)
-    .post(collectionsController.importCollection)
+    .post(collectionsController.import)
+
+router.route('/collections/remote')
+    .get(collectionsController.retrieveByUrl)
 
 module.exports = router;

@@ -80,3 +80,21 @@ paths:
       responses:
         '201':
           description: 'The collection has been successfully imported.'
+
+  /api/collections/remote:
+    get:
+      summary: 'Retrieve collection by URL'
+      operationId: collections-get-by-url
+      description: 'This endpoint retrieves the collection at the given URL.'
+      tags:
+        - Collections
+      parameters:
+        - name: url
+          in: query
+          description: |
+            The URL from which to retrieve the collection.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'A collection.'
