@@ -3,7 +3,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const OpenApiValidator = require('express-openapi-validator');
-const subscriptionsRoutes = require('./subscriptions-routes');
 const collectionsRoutes = require('./collections-routes');
 const collectionIndexesRoutes = require('./collection-indexes-routes');
 const errorHandler = require('../lib/error-handler');
@@ -12,7 +11,7 @@ const logger = require('../lib/logger');
 const router = express.Router();
 
 // Parse the request body
-router.use('/api', bodyParser.json({limit: '1mb'}));
+router.use('/api', bodyParser.json({ limit: '1mb' }));
 router.use('/api', bodyParser.urlencoded({ limit: '1mb', extended: true }));
 
 try {
@@ -28,7 +27,6 @@ try {
 }
 
 // Set up the routes
-router.use('/api', subscriptionsRoutes);
 router.use('/api', collectionsRoutes);
 router.use('/api', collectionIndexesRoutes);
 

@@ -3,19 +3,6 @@
 const collectionIndexesService = require('../services/collection-indexes-service');
 const logger = require('../lib/logger');
 
-exports.retrieveAll = function(req, res) {
-    collectionIndexesService.retrieveAll(function(err, collectionIndexes) {
-        if (err) {
-            logger.error('Failed with error: ' + err);
-            return res.status(500).send('Unable to get collection indexes. Server error.');
-        }
-        else {
-            logger.debug("Success: Retrieved collection indexes");
-            return res.status(200).send(collectionIndexes);
-        }
-    });
-};
-
 exports.retrieveByUrl = function(req, res) {
     collectionIndexesService.retrieveByUrl(req.query.url, function(err, collectionIndex) {
         if (err) {
@@ -40,6 +27,26 @@ exports.retrieveByUrl = function(req, res) {
             }
         } else {
             logger.debug("Success: Retrieved collection index from URL.");
+            return res.status(200).send(collectionIndex);
+        }
+    });
+};
+
+exports.refresh = function(req, res) {
+    const id = req.params.id;
+
+    if (!id) {
+        logger.error('Refresh collection index failed with error: Missing id');
+        return res.status(400).send('Unable to refresh collection index. Missing id.')
+    }
+
+    collectionIndexesService.refresh(id, function(err, collectionIndex) {
+        if (err) {
+            logger.error('Failed with error: ' + err);
+            return res.status(500).send('Unable to refresh collection index. Server error.');
+        }
+        else {
+            logger.debug("Success: Refreshed collection index");
             return res.status(200).send(collectionIndex);
         }
     });

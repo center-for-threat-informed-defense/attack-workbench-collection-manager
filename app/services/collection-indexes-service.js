@@ -11,11 +11,6 @@ const errors = {
 };
 exports.errors = errors;
 
-exports.retrieveAll = function(callback) {
-    // Do nothing for now
-    process.nextTick(callback(null, []));
-};
-
 exports.retrieveByUrl = function(url, callback) {
     if (!url) {
         const error = new Error(errors.missingParameter);
@@ -48,3 +43,11 @@ exports.retrieveByUrl = function(url, callback) {
         }
     });
 };
+
+exports.refresh = function(id, callback) {
+    // Do nothing for now
+    process.nextTick(() => {
+        return callback(null, {})
+    });
+};
+

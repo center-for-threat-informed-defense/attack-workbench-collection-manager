@@ -11,16 +11,6 @@ const errors = {
 };
 exports.errors = errors;
 
-exports.retrieveAll = function(callback) {
-    // Do nothing for now
-    process.nextTick(callback(null, []));
-};
-
-exports.import = function(collectionData, callback) {
-    // Do nothing for now
-    process.nextTick(callback(null, null));
-}
-
 exports.retrieveByUrl = function(url, callback) {
     if (!url) {
         const error = new Error(errors.missingParameter);
