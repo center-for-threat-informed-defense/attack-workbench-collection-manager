@@ -13,6 +13,11 @@ exports.initializeApp = async function() {
     const express = require('express');
     const app = express();
 
+    // Allow CORS
+    // TBD: Configure CORS for a specific origin
+    const cors = require('cors');
+    app.use(cors());
+
     // Compress response bodies
     const compression = require('compression');
     app.use(compression());
