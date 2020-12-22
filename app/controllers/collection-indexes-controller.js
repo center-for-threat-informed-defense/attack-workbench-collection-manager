@@ -28,6 +28,12 @@ exports.retrieveByUrl = function(req, res) {
             } else if (err.message === collectionIndexesService.errors.notFound) {
                 logger.error('URL not found: ' + req.query.url);
                 return res.status(404).send('Not found.');
+            } else if (err.message === collectionIndexesService.errors.hostNotFound) {
+                logger.warn('Host not found');
+                return res.status(400).send('Host not found');
+            } else if (err.message === collectionIndexesService.errors.connectionRefused) {
+                logger.warn('Connection refused');
+                return res.status(400).send('Connection refused');
             } else {
                 logger.error('Failed with error: ' + err);
                 return res.status(500).send('Unable to retrieve collection index from URL. Server error.');
