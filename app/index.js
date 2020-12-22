@@ -1,6 +1,6 @@
 'use strict';
 
-exports.initializeApp = function() {
+exports.initializeApp = async function() {
     const logger = require('./lib/logger');
     logger.info('ATT&CK Workbench Collection Manager app starting');
 
@@ -26,7 +26,13 @@ exports.initializeApp = function() {
         logger.info('Enabling HTTP request logging');
         const morgan = require('morgan');
         app.use(morgan('dev', { stream: logger.stream }));
-        
+
+        // Enable Swagger UI
+        const swaggerUi = require('swagger-ui-express');
+        const yaml = require('yamljs');
+        const openApiDoc = yaml.load(config.openApi.specPath);
+        app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openApiDoc));
+
         // DO NOT ALLOW TO GO TO PRODUCTION
         process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
     }

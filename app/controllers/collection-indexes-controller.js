@@ -4,7 +4,14 @@ const collectionIndexesService = require('../services/collection-indexes-service
 const logger = require('../lib/logger');
 
 exports.retrieveByUrl = function(req, res) {
-    collectionIndexesService.retrieveByUrl(req.query.url, function(err, collectionIndex) {
+    const url = req.query.url;
+
+    if (!url) {
+        logger.warn('Retrieve collection index failed with error: Missing url');
+        return res.status(400).send('Missing parameter: url');
+    }
+
+    collectionIndexesService.retrieveByUrl(url, function(err, collectionIndex) {
         if (err) {
             if (err.message === collectionIndexesService.errors.badRequest) {
                 logger.warn('Badly formatted URL: ' + req.query.url);
@@ -36,7 +43,7 @@ exports.refresh = function(req, res) {
     const id = req.params.id;
 
     if (!id) {
-        logger.error('Refresh collection index failed with error: Missing id');
+        logger.warn('Refresh collection index failed with error: Missing id');
         return res.status(400).send('Unable to refresh collection index. Missing id.')
     }
 

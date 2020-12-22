@@ -4,7 +4,14 @@ const collectionsService = require('../services/collections-service');
 const logger = require('../lib/logger');
 
 exports.retrieveByUrl = function(req, res) {
-    collectionsService.retrieveByUrl(req.query.url, function(err, collection) {
+    const url = req.query.url;
+
+    if (!url) {
+        logger.warn('Retrieve collection failed with error: Missing url');
+        return res.status(400).send('Missing parameter: url');
+    }
+
+    collectionsService.retrieveByUrl(url, function(err, collection) {
         if (err) {
             if (err.message === collectionsService.errors.badRequest) {
                 logger.warn('Badly formatted URL: ' + req.query.url);

@@ -7,6 +7,7 @@ const collectionsRoutes = require('./collections-routes');
 const collectionIndexesRoutes = require('./collection-indexes-routes');
 const errorHandler = require('../lib/error-handler');
 const logger = require('../lib/logger');
+const config = require('../config/config');
 
 const router = express.Router();
 
@@ -17,7 +18,7 @@ router.use('/api', bodyParser.urlencoded({ limit: '1mb', extended: true }));
 try {
     // Setup request validation
     const validator = OpenApiValidator.middleware({
-        apiSpec: './app/api/definitions/api.yml',
+        apiSpec: config.openApi.specPath,
         validateRequests: true,
         validateResponses: false
     });

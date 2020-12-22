@@ -5,7 +5,10 @@ module.exports = {
         port: process.env.PORT || 3001
     },
     app: {
-        name: 'federated-attack-collection-manager',
+        name: 'attack-workbench-collection-manager',
         env: process.env.NODE_ENV || 'development'
+    },
+    openApi: {
+        specPath: './app/api/definitions/openapi.yml'
     }
 };
