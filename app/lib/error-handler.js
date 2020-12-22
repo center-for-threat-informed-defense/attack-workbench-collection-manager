@@ -27,6 +27,11 @@ exports.requestValidation = function(err, req, res, next) {
 };
 
 exports.catchAll = function(err, req, res, next) {
+    // Handle a 404 not found
+    if (err.status === 404) {
+        return res.status(404).send('Not found');
+    }
+
     logger.error('catch all: ' + err);
-    res.status(500).send('Server error.');
+    return res.status(500).send('Server error.');
 };
