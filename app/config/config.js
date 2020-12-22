@@ -2,7 +2,7 @@
 
 module.exports = {
     server: {
-        port: process.env.PORT || 3000
+        port: process.env.PORT || 3001
     },
     app: {
         name: 'federated-attack-collection-manager',
