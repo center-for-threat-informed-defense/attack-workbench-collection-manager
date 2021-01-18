@@ -5,10 +5,10 @@
     "objects": [
         {
             "type": "x-mitre-collection",
-            "id": "x-mitre-collection--30ee11cf-0a05-4d9e-ab54-9b8563669647",
+            "id": "x-mitre-collection--915b6504-bde8-40b5-bfda-0c3ecb46a9b9",
             "spec_version": "2.1",
             "name": "Mobile ATT&CK",
-            "version": "8.0.0",
+            "x_mitre_version": "8.0.0",
             "description": "Version 8.0 of the Mobile dataset",
             "created_by_ref": "identity--4de13dd5-4b49-4760-b416-97564344c413",
             "created": "2018-01-16T19:15:30.610172Z",
