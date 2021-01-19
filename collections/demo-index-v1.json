@@ -17,7 +17,7 @@
             "description": "Techniques associated with the \"Zoo\" platform", 
             "created": "2020-07-15T10:41:41.536219Z", 
             "id": "x-mitre-collection--0bbd7841-f053-471a-9900-da4af02e40c2", 
-            "name": "Zoo ATT&CK: Techniques"
+            "name": "Zoo ATT&CK"
         }
     ]
 }
