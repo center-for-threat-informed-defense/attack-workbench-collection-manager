@@ -2,13 +2,15 @@
 
 const collectionIndexesService = require('../services/collection-indexes-service');
 const logger = require('../lib/logger');
+const config = require('../config/config');
 const async = require('async');
 
 let timer;
 exports.initializeScheduler = function() {
     logger.info('Starting the scheduler');
 
-    timer = setInterval(runCheckCollectionIndexes, 10 * 1000);
+    const intervalMilliseconds = config.scheduler.checkWorkbenchInterval * 1000;
+    timer = setInterval(runCheckCollectionIndexes, intervalMilliseconds);
 }
 
 exports.stopScheduler = function() {
