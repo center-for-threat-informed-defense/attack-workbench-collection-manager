@@ -18,7 +18,7 @@ async function runServer() {
     const config = app.get('config');
 
     // Create the scheduler
-    const scheduler = require('../app/scheduler');
+    const scheduler = require('../app/scheduler/scheduler');
     scheduler.initializeScheduler();
 
     // Start the REST server

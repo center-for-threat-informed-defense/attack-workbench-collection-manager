@@ -10,5 +10,9 @@ module.exports = {
     },
     openApi: {
         specPath: './app/api/definitions/openapi.yml'
+    },
+    workbench: {
+        restApiHost: process.env.workbenchHost || 'http://localhost',
+        restApiPort: process.env.workbenchPort || 3000
     }
 };
