@@ -1,6 +1,7 @@
 'use strict';
 
 const collectionIndexesService = require('../services/collection-indexes-service');
+const collectionsService = require('../services/collections-service');
 const logger = require('../lib/logger');
 const config = require('../config/config');
 const async = require('async');
@@ -50,14 +51,16 @@ function runCheckCollectionIndexes() {
                                         logger.info('The retrieved collection index is newer. Updating collection index in workbench.');
                                         collectionIndex.collection_index = remoteCollectionIndex;
                                         collectionIndex.workspace.update_policy.last_retrieval = new Date(now).toISOString();
-                                        
+
                                         collectionIndexesService.updateWorkbench(collectionIndex, function(err) {
                                             if (err) {
                                                 logger.error('Unable to update collection index in workbench. ' + err);
                                                 return callback(err);
                                             }
                                             else {
-                                                return callback();
+                                                subscriptionHandler(collectionIndex, function(err) {
+                                                    return callback();
+                                                });
                                             }
                                         });
                                     }
@@ -69,7 +72,9 @@ function runCheckCollectionIndexes() {
                                                 return callback(err);
                                             }
                                             else {
-                                                return callback();
+                                                subscriptionHandler(collectionIndex, function(err) {
+                                                    return callback();
+                                                });
                                             }
                                         });
                                     }
@@ -89,4 +94,74 @@ function runCheckCollectionIndexes() {
                 })
         }
     });
+}
+
+function subscriptionHandler(collectionIndex, callback) {
+    async.eachSeries(collectionIndex.workspace.update_policy.subscriptions, function(collectionId, callback2) {
+        collectionsService.retrieveFromWorkbench(collectionId, function(err, collections) {
+            if (err) {
+                logger.error(err);
+                return callback2(err);
+            }
+            console.log(`Retrieved ${ collections.length } versions of collection ${ collectionId }`);
+            collections.sort((a, b) => b.stix.modified.localeCompare(a.stix.modified));
+            const collectionInfo = collectionIndex.collection_index.collections.find(item => item.id === collectionId);
+            if (collectionInfo) {
+                collectionInfo.versions.sort((a, b) => b.modified.localeCompare(a.modified));
+            }
+            if (collectionInfo && collectionInfo.versions.length > 0) {
+                console.log(`latest available version: ${ collectionInfo.versions[0].modified }`);
+            }
+            else {
+                console.log('no latest version available');
+            }
+
+            if (collections.length > 0) {
+                console.log(`latest imported version: ${ collections[0].stix.modified }`);
+            }
+            else {
+                console.log('no imported version');
+            }
+
+            if (!collectionInfo || collectionInfo.versions.length === 0) {
+                // No versions available to import
+                return callback2();
+            }
+
+            if (collections.length === 0 || collections[0].stix.modified < collectionInfo.versions[0].modified) {
+                console.log('need to import new version');
+                collectionsService.retrieveByUrl(collectionInfo.versions[0].url, function(err, collectionBundle) {
+                    console.log(`Downloaded updated collection bundle with id ${ collectionBundle.id }`);
+
+                    collectionsService.importToWorkbench(collectionBundle, function (err, importedCollection) {
+                        if (err) {
+                            console.log(err);
+                            return callback2(err);
+                        }
+                        else {
+                            const total =
+                                importedCollection.workspace.import_categories.additions.length +
+                                importedCollection.workspace.import_categories.changes.length +
+                                importedCollection.workspace.import_categories.minor_changes.length +
+                                importedCollection.workspace.import_categories.duplicates.length;
+                            console.log(`Imported collection with id ${ importedCollection.stix.id } (${ total } objects)`);
+                            return callback2();
+                        }
+                    })
+                })
+            }
+            else {
+                console.log('do not need to import new version');
+                return callback2();
+            }
+        })
+    },
+        function(err) {
+            if (err) {
+                return callback(err);
+            }
+            else {
+                return callback();
+            }
+        });
 }

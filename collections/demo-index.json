@@ -1,19 +1,12 @@
 {
     "id": "45927999-46b6-4ccc-8eb8-1479b5114212",
     "name": "ATT&CK for Zoos (demo)", 
-    "modified": "2021-01-17T10:41:41.536219Z", 
+    "modified": "2020-07-15T10:41:41.536219Z", 
     "description": "This collection is for demonstration purposes only. This example dataset shows ATT&CK for Zoos, an extension of Enterprise domain adding the \"Zoo\" platform.",
     "created": "2020-07-15T10:41:41.536219Z", 
     "collections": [
         {
             "versions": [
-                {
-                    "url": "http://localhost:8082/demo-collection-v2.json", 
-                    "version": "2.0.0", 
-                    "modified": "2021-01-17T10:41:41.536219Z",
-                    "release_notes": "Below would be release notes for version 2.0.0 of the demo collection. _Markdown_ **formatting** ~~can't~~ can be used if desired."
-
-                },
                 {
                     "url": "http://localhost:8082/demo-collection-v1.json", 
                     "version": "1.0.0", 
