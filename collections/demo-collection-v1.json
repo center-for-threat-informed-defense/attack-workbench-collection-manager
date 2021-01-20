@@ -18,13 +18,17 @@
             ],
             "x_mitre_contents": [
                 {
-                    "object_ref": "attack-pattern--01df3350-ce05-4bdf-bdf8-0a919a66d4a8",
-                    "object_modified": "2020-01-24T14:14:05.452Z"
+                    "object_ref": "attack-pattern--91e316e1-87cf-4637-95f5-fa516823a1d3",
+                    "object_modified": "2019-11-12T00:14:20.652Z"
+                },
+                {
+                    "object_ref": "attack-pattern--48fdcc02-29fa-4f01-a2a4-6520a1187580",
+                    "object_modified": "2020-12-17T00:14:20.652Z"
                 }
             ]
         },
         {
-            "id": "attack-pattern--6dc15c1d-ad8f-4da3-aa06-32fd7e4d5faa",
+            "id": "attack-pattern--91e316e1-87cf-4637-95f5-fa516823a1d3",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Infiltration by Ambassador Llamas",
             "description": "Organizations may pose their infiltration llamas as ambassadors to trick zoo security systems.",
@@ -57,7 +61,7 @@
             ]
         },
         {
-            "id": "attack-pattern--acec8fb0-38d9-4862-b5df-fbb7517c7b27",
+            "id": "attack-pattern--48fdcc02-29fa-4f01-a2a4-6520a1187580",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Exfiltration by Combat Wombats",
             "description": "Organizations may use combat wombats for exfiltration of zoo data.",
