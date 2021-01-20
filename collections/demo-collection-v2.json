@@ -5,7 +5,7 @@
     "objects": [
         {
             "type": "x-mitre-collection",
-            "id": "x-mitre-collection--0bbd7841-f053-471a-9900-da4af02e40c2",
+            "id": "x-mitre-collection--90d5d8d4-52bc-4bf8-8a0f-6bfebdf7d75e",
             "spec_version": "2.1",
             "name": "Zoo ATT&CK",
             "x_mitre_version": "2.0.0",
@@ -33,8 +33,7 @@
                     "source_name": "mitre-attack",
                     "url": "https://attack.mitre.org/techniques/T9998",
                     "external_id": "T9998"
-                },
-                
+                }
             ],
             "object_marking_refs": [
                 "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
@@ -89,6 +88,6 @@
             "x_mitre_domains": [
                 "enterprise-attack"
             ]
-        },
+        }
     ]
 }
