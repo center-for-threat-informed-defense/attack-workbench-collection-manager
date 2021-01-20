@@ -1,0 +1,38 @@
+{
+  "name": "attack-workbench-collection-manager",
+  "version": "0.0.0",
+  "description": "Collection Manager for the ATT&CK Workbench.",
+  "main": "index.js",
+  "scripts": {
+    "api:generate-md": "widdershins ./app/api/definitions/api.yml -o ./app/api/markdown/api.md --summary",
+    "api:generate-html": "shins --root ./app/api/web -o ./app/api/web/index.html ./app/api/markdown/api.md",
+    "api:generate-all": "npm run api:generate-md && npm run api:generate-html",
+    "lint": "eslint .",
+    "snyk": "snyk test --insecure",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-openapi-validator": "^4.2.0",
+    "helmet": "^4.1.1",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.5",
+    "superagent": "^6.1.0",
+    "uuid": "^8.3.1",
+    "winston": "^3.3.3",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "expect": "^26.5.3",
+    "mocha": "^8.1.3",
+    "shins": "^2.6.0",
+    "snyk": "^1.413.3",
+    "supertest": "^5.0.0",
+    "widdershins": "^4.0.1"
+  }
+}

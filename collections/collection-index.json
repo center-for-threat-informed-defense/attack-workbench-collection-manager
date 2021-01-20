@@ -1,0 +1,41 @@
+{
+    "id": "bb8c95c0-4e8f-491e-a3c9-8b4207e43041",
+    "name": "MITRE ATT&CK", 
+    "modified": "2020-10-30T19:15:30.610172Z", 
+    "description": "All ATT&CK datasets",
+    "created": "2018-01-16T19:15:30.610172Z", 
+    "collections": [
+        {
+            "versions": [
+                {
+                    "url": "http://localhost:8082/enterprise-attack-8.0.json", 
+                    "version": "8.0.0", 
+                    "modified": "2020-10-27T08:51:03.896157Z",
+                    "release_notes": "The October 2020 (v8) ATT&CK release updates Techniques, Groups, and Software for both Enterprise and Mobile. The biggest changes are the deprecation of the PRE-ATT&CK domain, the addition of two new Tactics to replace [PRE-ATT&CK](/versions/v7/matrices/pre/), and the addition of the Network platform to Enterprise ATT&CK.\n\nThis version of ATT&CK for Enterprise contains 14 Tactics, 177 Techniques, and 348 Sub-techniques.\n\n#### Retirement of PRE-ATT&CK\nThis release deprecates and removes the PRE-ATT&CK domain from ATT&CK, replacing its scope with two new Tactics in Enterprise ATT&CK [Reconnaissance](/tactics/TA0043/) and [Resource Development](/tactics/TA0042/). A new platform has also been added to ATT&CK to represent the environment these techniques occur in, [PRE](/matrices/enterprise/pre/). The previous contents of PRE-ATT&CK have been preserved [here](/versions/v7/matrices/pre/). See [the accompanying blog post](https://medium.com/mitre-attack/the-retirement-of-pre-attack-4b73ffecd3d3) for more details."
+                }, 
+                {
+                    "url": "http://localhost:8082/enterprise-attack-7.2.json", 
+                    "version": "7.2.0", 
+                    "modified": "2020-07-15T10:41:41.536219Z"
+                }
+            ], 
+            "description": "The Enterprise domain of the ATT&CK dataset", 
+            "created": "2018-01-16T19:15:30.610172Z", 
+            "id": "x-mitre-collection--0bbd7841-f053-471a-9900-da4af02e40c2", 
+            "name": "Enterprise ATT&CK"
+        }, 
+        {
+            "versions": [
+                {
+                    "url": "http://localhost:8082/mobile-attack-8.0.json", 
+                    "version": "8.0.0", 
+                    "modified": "2020-10-27T08:51:03.896157Z"
+                }
+            ], 
+            "description": "The Mobile domain of the ATT&CK dataset", 
+            "created": "2018-01-16T19:15:30.610172Z", 
+            "id": "x-mitre-collection--915b6504-bde8-40b5-bfda-0c3ecb46a9b9", 
+            "name": "Mobile ATT&CK"
+        }
+    ]
+}

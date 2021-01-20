@@ -1,0 +1,76 @@
+openapi: 3.0.2
+info:
+  title: ATT&CK Workbench Collection Manager
+  version: 0.0.1
+servers:
+  - url: '{protocol}://{hostname}:{port}/'
+    variables:
+      protocol:
+        default: 'http'
+      hostname:
+        default: 'localhost'
+      port:
+        default: '3001'
+
+tags:
+  - name: Collection Indexes
+    description: 'Operations on collection indexes.'
+  - name: Collections
+    description: 'Operations on collections.'
+
+paths:
+  /api/collection-indexes/remote:
+    get:
+      summary: 'Retrieve collection index by URL'
+      operationId: collection-indexes-get-by-url
+      description: 'This endpoint retrieves the collection index at the given URL.'
+      tags:
+        - Collection Indexes
+      parameters:
+        - name: url
+          in: query
+          required: true
+          description: |
+            The URL from which to retrieve the collection index.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'A collection index.'
+
+  /api/collection-indexes/{id}/refresh:
+    post:
+      summary: 'Refresh a collection index'
+      operationId: collection-indexes-refresh
+      description: 'This endpoint retrieves a collection index from a remote URL and updates the database if its newer.'
+      tags:
+        - Collections Indexes
+      parameters:
+        - name: id
+          in: path
+          description: 'Id of the collection index to refresh'
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'The collection index was refreshed.'
+
+  /api/collections/remote:
+    get:
+      summary: 'Retrieve collection by URL'
+      operationId: collections-get-by-url
+      description: 'This endpoint retrieves the collection at the given URL.'
+      tags:
+        - Collections
+      parameters:
+        - name: url
+          in: query
+          required: true
+          description: |
+            The URL from which to retrieve the collection.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 'A collection.'
