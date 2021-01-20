@@ -18,16 +18,8 @@
             ],
             "x_mitre_contents": [
                 {
-                    "object_ref": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
-                    "object_modified": "2020-03-30T14:03:43.761Z"
-                },
-                {
                     "object_ref": "attack-pattern--82f04b1e-5371-4a6f-be06-411f0f43b483",
                     "object_modified": "2019-02-03T16:56:41.200Z"
-                },
-                {
-                    "object_ref": "attack-pattern--51aedbd6-2837-4d15-aeb0-cb09f2bf22ac",
-                    "object_modified": "2018-10-17T01:05:10.701Z"
                 },
                 {
                     "object_ref": "attack-pattern--62adb627-f647-498e-b4cc-41499361bacb",
@@ -58,24 +50,12 @@
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
-                    "object_ref": "attack-pattern--1f96d624-8409-4472-ad8a-30618ee6b2e2",
-                    "object_modified": "2018-10-17T01:05:10.699Z"
-                },
-                {
-                    "object_ref": "attack-pattern--6b846ad0-cc20-4db6-aa34-91561397c5e2",
-                    "object_modified": "2018-10-17T01:05:10.699Z"
-                },
-                {
                     "object_ref": "attack-pattern--198ce408-1470-45ee-b47f-7056050d4fc2",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
                     "object_ref": "attack-pattern--a0464539-e1b7-4455-a355-12495987c300",
                     "object_modified": "2019-02-03T14:51:19.932Z"
-                },
-                {
-                    "object_ref": "attack-pattern--45dcbc83-4abc-4de1-b643-e528d1e9df09",
-                    "object_modified": "2018-10-17T01:05:10.703Z"
                 },
                 {
                     "object_ref": "attack-pattern--bd4d32f5-eed4-4018-a649-40b229dd1d69",
@@ -142,20 +122,8 @@
                     "object_modified": "2019-10-28T18:33:12.646Z"
                 },
                 {
-                    "object_ref": "attack-pattern--b765efd1-02e6-4e67-aebf-0fef5c37e54b",
-                    "object_modified": "2018-10-17T01:05:10.700Z"
-                },
-                {
                     "object_ref": "attack-pattern--9d7c32f4-ab39-49dc-8055-8106bc2294a1",
                     "object_modified": "2019-10-09T14:39:38.930Z"
-                },
-                {
-                    "object_ref": "attack-pattern--89fcd02f-62dc-40b9-a54b-9ac4b1baef05",
-                    "object_modified": "2019-10-16T13:24:48.936Z"
-                },
-                {
-                    "object_ref": "attack-pattern--f296fc9c-2ff5-43ee-941e-6b49c438270a",
-                    "object_modified": "2018-10-17T01:05:10.703Z"
                 },
                 {
                     "object_ref": "attack-pattern--b332a960-3c04-495a-827f-f17a5daed3a6",
@@ -186,10 +154,6 @@
                     "object_modified": "2019-10-11T14:48:50.525Z"
                 },
                 {
-                    "object_ref": "attack-pattern--c91c304a-975d-4501-9789-0db1c57afd3f",
-                    "object_modified": "2018-10-17T01:05:10.702Z"
-                },
-                {
                     "object_ref": "attack-pattern--22379609-a99f-4a01-bd7e-70f3e105859d",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
@@ -216,10 +180,6 @@
                 {
                     "object_ref": "attack-pattern--2d646840-f6f5-4619-a5a8-29c8316bbac5",
                     "object_modified": "2019-02-03T15:19:22.439Z"
-                },
-                {
-                    "object_ref": "attack-pattern--e30cc912-7ea1-4683-9219-543b86cbdec9",
-                    "object_modified": "2018-10-17T01:05:10.701Z"
                 },
                 {
                     "object_ref": "attack-pattern--cf28ca46-1fd3-46b4-b1f6-ec0b72361848",
@@ -250,10 +210,6 @@
                     "object_modified": "2020-06-24T15:04:20.321Z"
                 },
                 {
-                    "object_ref": "attack-pattern--11bd699b-f2c2-4e48-bf46-fb3f8acd9799",
-                    "object_modified": "2018-10-17T01:05:10.699Z"
-                },
-                {
                     "object_ref": "attack-pattern--cde2cb84-455e-410c-8aa9-086f2788bcd2",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
@@ -272,22 +228,6 @@
                 {
                     "object_ref": "attack-pattern--dfe29258-ce59-421c-9dee-e85cb9fa90cd",
                     "object_modified": "2019-02-03T17:08:07.111Z"
-                },
-                {
-                    "object_ref": "attack-pattern--a9cab8f6-4c94-4c9b-9e7d-9d863ff53431",
-                    "object_modified": "2018-10-17T01:05:10.703Z"
-                },
-                {
-                    "object_ref": "attack-pattern--0bcc4ec1-a897-49a9-a9ff-c00df1d1209d",
-                    "object_modified": "2019-04-29T19:35:30.985Z"
-                },
-                {
-                    "object_ref": "attack-pattern--b928b94a-4966-4e2a-9e61-36505b896ebc",
-                    "object_modified": "2018-10-17T01:05:10.704Z"
-                },
-                {
-                    "object_ref": "attack-pattern--f9e4f526-ac9d-4df5-8949-833a82a1d2df",
-                    "object_modified": "2018-10-17T01:05:10.704Z"
                 },
                 {
                     "object_ref": "attack-pattern--76c12fc8-a4eb-45d6-a3b7-e371a7248f69",
@@ -350,10 +290,6 @@
                     "object_modified": "2020-01-21T15:27:30.182Z"
                 },
                 {
-                    "object_ref": "attack-pattern--831e3269-da49-48ac-94dc-948008e8fd16",
-                    "object_modified": "2018-10-17T01:05:10.701Z"
-                },
-                {
                     "object_ref": "attack-pattern--6f86d346-f092-4abc-80df-8558a90c426a",
                     "object_modified": "2019-02-03T14:16:59.424Z"
                 },
@@ -390,10 +326,6 @@
                     "object_modified": "2019-10-01T14:18:47.762Z"
                 },
                 {
-                    "object_ref": "attack-pattern--a21a6a79-f9a1-4c87-aed9-ba2d79536881",
-                    "object_modified": "2018-10-17T01:05:10.700Z"
-                },
-                {
                     "object_ref": "attack-pattern--0d95940f-9583-4e0f-824c-a42c1be47fad",
                     "object_modified": "2020-10-19T18:06:09.010Z"
                 },
@@ -416,10 +348,6 @@
                 {
                     "object_ref": "attack-pattern--77e30eee-fd48-40b4-99ec-73e97c158b58",
                     "object_modified": "2020-10-01T12:42:21.628Z"
-                },
-                {
-                    "object_ref": "attack-pattern--8f142a25-f6c3-4520-bd50-2ae3ab50ed3e",
-                    "object_modified": "2020-10-23T15:05:40.674Z"
                 },
                 {
                     "object_ref": "attack-pattern--948a447c-d783-4ba0-8516-a64140fcacd5",
@@ -503,14 +431,6 @@
                 },
                 {
                     "object_ref": "relationship--0791f28b-d06f-4fee-9cdb-85a6fd2eed61",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--ab7cd212-7faa-46a8-9666-92a67ae7a6b0",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--681d5e61-9412-4c58-bef1-c6ef7bffcb0c",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
@@ -674,10 +594,6 @@
                     "object_modified": "2020-06-24T15:08:18.504Z"
                 },
                 {
-                    "object_ref": "relationship--24bcb2cd-1532-4e98-a485-a55e06d2577d",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
                     "object_ref": "relationship--aa8e45c2-4276-451b-b1eb-59c396bf720a",
                     "object_modified": "2019-10-10T15:18:51.154Z"
                 },
@@ -699,10 +615,6 @@
                 },
                 {
                     "object_ref": "relationship--d54bdaff-8eb8-4a02-9f64-bc33c892e9d1",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--f157970b-4782-46d0-abdd-000ae6eea14b",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
@@ -858,10 +770,6 @@
                     "object_modified": "2019-09-18T19:02:10.194Z"
                 },
                 {
-                    "object_ref": "relationship--0a28b2f2-ca0e-4d9f-9840-26e8ce944012",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
                     "object_ref": "relationship--02b3c8fe-1539-4c77-b67e-07fa8a22c91e",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
@@ -900,10 +808,6 @@
                 {
                     "object_ref": "relationship--d6930d98-f8a2-4556-baa4-95275d3fa23d",
                     "object_modified": "2020-05-04T15:38:57.124Z"
-                },
-                {
-                    "object_ref": "relationship--a7cc0168-247d-4a6d-b6f4-d5a04f99216c",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
                     "object_ref": "relationship--0e9edc13-7af7-43c4-8ec2-636b1f8cb7f1",
@@ -1014,10 +918,6 @@
                     "object_modified": "2019-10-10T15:24:09.378Z"
                 },
                 {
-                    "object_ref": "relationship--cc49561f-8364-4908-9111-ad3a6dcd922c",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
                     "object_ref": "relationship--4f366c8c-9c70-44ed-baa8-d433d5dbfe49",
                     "object_modified": "2019-08-09T17:52:31.853Z"
                 },
@@ -1039,14 +939,6 @@
                 },
                 {
                     "object_ref": "relationship--2a287c91-2792-407f-a9ee-8153a802b7c6",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--c3c2bf20-fa33-4af4-92ec-d60679e1d4ee",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--7e00d3ac-a97a-4db0-9699-7474d81413a8",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
@@ -1190,10 +1082,6 @@
                     "object_modified": "2019-10-09T19:39:33.177Z"
                 },
                 {
-                    "object_ref": "relationship--3ae62d66-6405-413f-86e3-ccdb66fac7ba",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
                     "object_ref": "relationship--4fc45b06-287d-4151-9f5a-37bb34dcdeec",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
@@ -1204,10 +1092,6 @@
                 {
                     "object_ref": "relationship--73d78f2c-dd3b-469c-a622-e2e89cb521d3",
                     "object_modified": "2020-06-24T15:08:18.503Z"
-                },
-                {
-                    "object_ref": "relationship--ac53e382-a140-4bbf-a59d-db3fe21acfaa",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
                 },
                 {
                     "object_ref": "relationship--50c81a85-8c70-48df-a338-8622d2debc74",
@@ -1238,18 +1122,6 @@
                     "object_modified": "2020-06-24T15:08:18.501Z"
                 },
                 {
-                    "object_ref": "relationship--01965668-d033-4aca-a8e5-71a07070e266",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--79f04c05-8299-4e5e-b4c1-3f82637fa47a",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--c53170a0-ca7f-4827-9c3c-1803ecd131f9",
-                    "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
                     "object_ref": "relationship--68e5789c-9f60-421e-9c79-fae207a29e83",
                     "object_modified": "2019-10-15T19:54:10.283Z"
                 },
@@ -1268,10 +1140,6 @@
                 {
                     "object_ref": "relationship--b263e4e9-972d-4ba7-8be8-e55eb6a483c0",
                     "object_modified": "2018-10-17T00:14:20.652Z"
-                },
-                {
-                    "object_ref": "relationship--55f12292-dc9d-4bfd-9de9-2d07cd67b044",
-                    "object_modified": "2019-07-29T13:57:09.300Z"
                 },
                 {
                     "object_ref": "relationship--a7336f2c-8f89-4d54-ac2b-77743afb2943",
@@ -1480,10 +1348,6 @@
                 {
                     "object_ref": "relationship--cf23f54e-214b-4780-891f-99ab6e023951",
                     "object_modified": "2020-04-27T16:52:49.629Z"
-                },
-                {
-                    "object_ref": "relationship--fbd2d4f7-96ff-4624-a567-d4882f0c10ca",
-                    "object_modified": "2020-03-30T14:03:43.920Z"
                 },
                 {
                     "object_ref": "relationship--409570bb-77c9-4021-920e-1600a7f4efbd",
@@ -2026,10 +1890,6 @@
                     "object_modified": "2019-10-18T14:52:53.193Z"
                 },
                 {
-                    "object_ref": "relationship--e8dac11f-8c51-4b80-9ada-db15ff5f1114",
-                    "object_modified": "2020-03-30T14:03:43.942Z"
-                },
-                {
                     "object_ref": "relationship--5592b50e-a184-4a75-8501-99072d3a5b5f",
                     "object_modified": "2019-10-18T15:11:37.106Z"
                 },
@@ -2112,10 +1972,6 @@
                 {
                     "object_ref": "relationship--a62f9f72-d5a6-4e12-ac53-62bd4c81aa4d",
                     "object_modified": "2020-05-04T15:38:57.137Z"
-                },
-                {
-                    "object_ref": "relationship--2e58b22f-b889-49fd-bbe1-37a907a5fcb1",
-                    "object_modified": "2020-10-23T15:05:40.932Z"
                 },
                 {
                     "object_ref": "relationship--c8516d70-8992-4946-90b3-37435be40822",
@@ -3610,10 +3466,6 @@
                     "object_modified": "2020-10-01T12:43:42.238Z"
                 },
                 {
-                    "object_ref": "relationship--39f46abc-d9e3-463d-9340-3bc8334af314",
-                    "object_modified": "2020-10-23T15:05:40.967Z"
-                },
-                {
                     "object_ref": "course-of-action--25dc1ce8-eb55-4333-ae30-a7cb4f5894a1",
                     "object_modified": "2018-10-17T00:14:20.652Z"
                 },
@@ -4052,75 +3904,6 @@
             ]
         },
         {
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "external_id": "T1453",
-                    "url": "https://attack.mitre.org/techniques/T1453"
-                },
-                {
-                    "url": "https://www.skycure.com/blog/accessibility-clickjacking/",
-                    "description": "Yair Amit. (2016, March 3). \u201cAccessibility Clickjacking\u201d \u2013 The Next Evolution in Android Malware that Impacts More Than 500 Million Devices. Retrieved December 21, 2016.",
-                    "source_name": "Skycure-Accessibility"
-                },
-                {
-                    "description": "Luk\u00e1\u0161 \u0160tefanko. (2018, December 11). Android Trojan steals money from PayPal accounts even with 2FA on. Retrieved July 11, 2019.",
-                    "url": "https://www.welivesecurity.com/2018/12/11/android-trojan-steals-money-paypal-accounts-2fa/",
-                    "source_name": "android-trojan-steals-paypal-2fa"
-                },
-                {
-                    "source_name": "banking-trojans-google-play",
-                    "url": "https://www.welivesecurity.com/2018/10/24/banking-trojans-continue-surface-google-play/",
-                    "description": "Luk\u00e1\u0161 \u0160tefanko. (2018, October 24). Banking Trojans continue to surface on Google Play. Retrieved July 11, 2019."
-                }
-            ],
-            "description": "**This technique has been deprecated. Please use [Input Capture](https://attack.mitre.org/techniques/T1417), [Input Injection](https://attack.mitre.org/techniques/T1516), and [Input Prompt](https://attack.mitre.org/techniques/T1411) where appropriate.**\n\nA malicious app could abuse Android's accessibility features to capture sensitive data or perform other malicious actions.(Citation: Skycure-Accessibility)\n\nAdversaries may abuse accessibility features on Android to emulate a user's clicks, for example to steal money from a user's bank account.(Citation: android-trojan-steals-paypal-2fa)(Citation: banking-trojans-google-play)\n\nAdversaries may abuse accessibility features on Android devices to evade defenses by repeatedly clicking the \"Back\" button when a targeted app manager or mobile security app is launched, or when strings suggesting uninstallation are detected in the foreground. This effectively prevents the malicious application from being uninstalled.(Citation: android-trojan-steals-paypal-2fa)",
-            "name": "Abuse Accessibility Features",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "id": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
-            "type": "attack-pattern",
-            "kill_chain_phases": [
-                {
-                    "kill_chain_name": "mitre-mobile-attack",
-                    "phase_name": "collection"
-                },
-                {
-                    "kill_chain_name": "mitre-mobile-attack",
-                    "phase_name": "credential-access"
-                },
-                {
-                    "kill_chain_name": "mitre-mobile-attack",
-                    "phase_name": "impact"
-                },
-                {
-                    "kill_chain_name": "mitre-mobile-attack",
-                    "phase_name": "defense-evasion"
-                }
-            ],
-            "modified": "2020-03-30T14:03:43.761Z",
-            "created": "2017-10-25T14:48:08.613Z",
-            "x_mitre_is_subtechnique": false,
-            "x_mitre_deprecated": true,
-            "x_mitre_platforms": [
-                "Android"
-            ],
-            "x_mitre_tactic_type": [
-                "Post-Adversary Device Access"
-            ],
-            "x_mitre_version": "2.0",
-            "x_mitre_old_attack_id": "MOB-T1056",
-            "x_mitre_contributors": [
-                "Luk\u00e1\u0161 \u0160tefanko, ESET"
-            ],
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ]
-        },
-        {
             "x_mitre_old_attack_id": "MOB-T1004",
             "x_mitre_version": "1.1",
             "x_mitre_tactic_type": [
@@ -4162,27 +3945,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "id": "attack-pattern--51aedbd6-2837-4d15-aeb0-cb09f2bf22ac",
-            "name": "Abuse of iOS Enterprise App Signing Key",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1445",
-                    "external_id": "T1445"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1048",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.701Z",
-            "created": "2017-10-25T14:48:16.288Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "id": "attack-pattern--62adb627-f647-498e-b4cc-41499361bacb",
@@ -4518,48 +4280,6 @@
             ]
         },
         {
-            "id": "attack-pattern--1f96d624-8409-4472-ad8a-30618ee6b2e2",
-            "name": "App Delivered via Email Attachment",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1434",
-                    "external_id": "T1434"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1037",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.699Z",
-            "created": "2017-10-25T14:48:10.699Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "attack-pattern--6b846ad0-cc20-4db6-aa34-91561397c5e2",
-            "name": "App Delivered via Web Download",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1431",
-                    "external_id": "T1431"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1034",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.699Z",
-            "created": "2017-10-25T14:48:11.861Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "attack-pattern--198ce408-1470-45ee-b47f-7056050d4fc2",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Application Discovery",
@@ -4662,27 +4382,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "id": "attack-pattern--45dcbc83-4abc-4de1-b643-e528d1e9df09",
-            "name": "Biometric Spoofing",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1460",
-                    "external_id": "T1460"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1063",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.703Z",
-            "created": "2017-10-25T14:48:24.069Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "object_marking_refs": [
@@ -5536,27 +5235,6 @@
             ]
         },
         {
-            "id": "attack-pattern--b765efd1-02e6-4e67-aebf-0fef5c37e54b",
-            "name": "Detect App Analysis Environment",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1440",
-                    "external_id": "T1440"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1043",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.700Z",
-            "created": "2017-10-25T14:48:26.473Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "created": "2017-10-25T14:48:17.886Z",
             "modified": "2019-10-09T14:39:38.930Z",
             "kill_chain_phases": [
@@ -5613,53 +5291,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "created": "2017-10-25T14:48:28.456Z",
-            "modified": "2019-10-16T13:24:48.936Z",
-            "type": "attack-pattern",
-            "revoked": true,
-            "id": "attack-pattern--89fcd02f-62dc-40b9-a54b-9ac4b1baef05",
-            "name": "Device Type Discovery",
-            "external_references": [
-                {
-                    "external_id": "T1419",
-                    "url": "https://attack.mitre.org/techniques/T1419",
-                    "source_name": "mitre-mobile-attack"
-                },
-                {
-                    "url": "https://developer.android.com/reference/android/os/Build",
-                    "description": "Android. (n.d.). Build. Retrieved December 21, 2016.",
-                    "source_name": "Android-Build"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1022",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "attack-pattern--f296fc9c-2ff5-43ee-941e-6b49c438270a",
-            "name": "Device Unlock Code Guessing or Brute Force",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1459",
-                    "external_id": "T1459"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1062",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.703Z",
-            "created": "2017-10-25T14:48:23.652Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "id": "attack-pattern--b332a960-3c04-495a-827f-f17a5daed3a6",
@@ -6051,27 +5682,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "id": "attack-pattern--c91c304a-975d-4501-9789-0db1c57afd3f",
-            "name": "Exploit Baseband Vulnerability",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1455",
-                    "external_id": "T1455"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1058",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.702Z",
-            "created": "2017-10-25T14:48:07.149Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "id": "attack-pattern--22379609-a99f-4a01-bd7e-70f3e105859d",
@@ -6504,27 +6114,6 @@
             ]
         },
         {
-            "id": "attack-pattern--e30cc912-7ea1-4683-9219-543b86cbdec9",
-            "name": "Fake Developer Accounts",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1442",
-                    "external_id": "T1442"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1045",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.701Z",
-            "created": "2017-10-25T14:48:28.786Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "attack-pattern--cf28ca46-1fd3-46b4-b1f6-ec0b72361848",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "File and Directory Discovery",
@@ -6938,27 +6527,6 @@
             ]
         },
         {
-            "id": "attack-pattern--11bd699b-f2c2-4e48-bf46-fb3f8acd9799",
-            "name": "Insecure Third-Party Libraries",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1425",
-                    "external_id": "T1425"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1028",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.699Z",
-            "created": "2017-10-25T14:48:30.462Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "attack-pattern--cde2cb84-455e-410c-8aa9-086f2788bcd2",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Install Insecure or Malicious Configuration",
@@ -7267,90 +6835,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "id": "attack-pattern--a9cab8f6-4c94-4c9b-9e7d-9d863ff53431",
-            "name": "Malicious Media Content",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1457",
-                    "external_id": "T1457"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1060",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.703Z",
-            "created": "2017-10-25T14:48:19.682Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "created": "2017-10-25T14:48:08.155Z",
-            "modified": "2019-04-29T19:35:30.985Z",
-            "type": "attack-pattern",
-            "id": "attack-pattern--0bcc4ec1-a897-49a9-a9ff-c00df1d1209d",
-            "name": "Malicious SMS Message",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1454",
-                    "external_id": "T1454"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1057",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "attack-pattern--b928b94a-4966-4e2a-9e61-36505b896ebc",
-            "name": "Malicious Software Development Tools",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1462",
-                    "external_id": "T1462"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1065",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.704Z",
-            "created": "2017-10-25T14:48:24.905Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "attack-pattern--f9e4f526-ac9d-4df5-8949-833a82a1d2df",
-            "name": "Malicious or Vulnerable Built-in Device Functionality",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1473",
-                    "external_id": "T1473"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1076",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.704Z",
-            "created": "2017-10-25T14:48:09.446Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "id": "attack-pattern--76c12fc8-a4eb-45d6-a3b7-e371a7248f69",
@@ -8109,27 +7593,6 @@
             ]
         },
         {
-            "id": "attack-pattern--831e3269-da49-48ac-94dc-948008e8fd16",
-            "name": "Remotely Install Application",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1443",
-                    "external_id": "T1443"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1046",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.701Z",
-            "created": "2017-10-25T14:48:34.830Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "attack-pattern--6f86d346-f092-4abc-80df-8558a90c426a",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Remotely Track Device Without Authorization",
@@ -8633,27 +8096,6 @@
             ]
         },
         {
-            "id": "attack-pattern--a21a6a79-f9a1-4c87-aed9-ba2d79536881",
-            "name": "Stolen Developer Credentials or Signing Keys",
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1441",
-                    "external_id": "T1441"
-                }
-            ],
-            "x_mitre_old_attack_id": "MOB-T1044",
-            "type": "attack-pattern",
-            "modified": "2018-10-17T01:05:10.700Z",
-            "created": "2017-10-25T14:48:05.928Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "attack-pattern--0d95940f-9583-4e0f-824c-a42c1be47fad",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "name": "Supply Chain Compromise",
@@ -8957,52 +8399,6 @@
             "x_mitre_domains": [
                 "mobile-attack"
             ]
-        },
-        {
-            "revoked": true,
-            "external_references": [
-                {
-                    "source_name": "mitre-mobile-attack",
-                    "url": "https://attack.mitre.org/techniques/T1415",
-                    "external_id": "T1415"
-                },
-                {
-                    "url": "https://pages.nist.gov/mobile-threat-catalogue/authentication-threats/AUT-10.html",
-                    "source_name": "NIST Mobile Threat Catalogue",
-                    "external_id": "AUT-10"
-                },
-                {
-                    "source_name": "FireEye-Masque2",
-                    "description": "Hui Xue, Tao Wei, Yulong Zhang, Song Jin, Zhaofeng Chen. (2015, February 19). IOS MASQUE ATTACK REVIVED: BYPASSING PROMPT FOR TRUST AND APP URL SCHEME HIJACKING. Retrieved December 21, 2016.",
-                    "url": "https://www.fireeye.com/blog/threat-research/2015/02/ios_masque_attackre.html"
-                },
-                {
-                    "source_name": "Dhanjani-URLScheme",
-                    "description": "Nitesh Dhanjani. (2010, November 8). Insecure Handling of URL Schemes in Apple\u2019s iOS. Retrieved December 21, 2016.",
-                    "url": "http://www.dhanjani.com/blog/2010/11/insecure-handling-of-url-schemes-in-apples-ios.html"
-                },
-                {
-                    "source_name": "IETF-PKCE",
-                    "description": "N. Sakimura, J. Bradley, and N. Agarwal. (2015, September). IETF RFC 7636: Proof Key for Code Exchange by OAuth Public Clients. Retrieved December 21, 2016.",
-                    "url": "https://tools.ietf.org/html/rfc7636"
-                },
-                {
-                    "source_name": "MobileIron-XARA",
-                    "description": "Michael T. Raggo. (2015, October 1). iOS URL Scheme Hijacking (XARA) Attack Analysis and Countermeasures. Retrieved December 21, 2016.",
-                    "url": "https://www.mobileiron.com/en/smartwork-blog/ios-url-scheme-hijacking-xara-attack-analysis-and-countermeasures"
-                }
-            ],
-            "name": "URL Scheme Hijacking",
-            "id": "attack-pattern--8f142a25-f6c3-4520-bd50-2ae3ab50ed3e",
-            "type": "attack-pattern",
-            "modified": "2020-10-23T15:05:40.674Z",
-            "created": "2017-10-25T14:48:17.533Z",
-            "x_mitre_old_attack_id": "MOB-T1018",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
         },
         {
             "id": "attack-pattern--948a447c-d783-4ba0-8516-a64140fcacd5",
@@ -9570,42 +8966,6 @@
             "source_ref": "malware--326eaf7b-5784-4f08-8fc2-61fd5d5bc5fb",
             "relationship_type": "uses",
             "target_ref": "attack-pattern--667e5707-3843-4da8-bd34-88b922526f0d",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--ab7cd212-7faa-46a8-9666-92a67ae7a6b0",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--51aedbd6-2837-4d15-aeb0-cb09f2bf22ac",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--53263a67-075e-48fa-974b-91c5b5445db7",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--681d5e61-9412-4c58-bef1-c6ef7bffcb0c",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--c91c304a-975d-4501-9789-0db1c57afd3f",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--2d646840-f6f5-4619-a5a8-29c8316bbac5",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -10579,24 +9939,6 @@
             "x_mitre_version": "1.0"
         },
         {
-            "id": "relationship--24bcb2cd-1532-4e98-a485-a55e06d2577d",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--6b846ad0-cc20-4db6-aa34-91561397c5e2",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--53263a67-075e-48fa-974b-91c5b5445db7",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "relationship--aa8e45c2-4276-451b-b1eb-59c396bf720a",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "description": "[Gooligan](https://attack.mitre.org/software/S0290) executes Android root exploits.(Citation: Gooligan Citation)",
@@ -10746,24 +10088,6 @@
             "source_ref": "malware--3c3b55a6-c3e9-4043-8aae-283fe96220c0",
             "relationship_type": "uses",
             "target_ref": "attack-pattern--6c49d50f-494d-4150-b774-a655022d20a6",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--f157970b-4782-46d0-abdd-000ae6eea14b",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--b765efd1-02e6-4e67-aebf-0fef5c37e54b",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--d9db3d46-66ca-44b4-9daa-1ef97cb7465a",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -11721,24 +11045,6 @@
             "x_mitre_version": "1.0"
         },
         {
-            "id": "relationship--0a28b2f2-ca0e-4d9f-9840-26e8ce944012",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--f296fc9c-2ff5-43ee-941e-6b49c438270a",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--dfe29258-ce59-421c-9dee-e85cb9fa90cd",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "relationship--02b3c8fe-1539-4c77-b67e-07fa8a22c91e",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "description": "Some original variants of [BrainTest](https://attack.mitre.org/software/S0293) had the capability to automatically root some devices, but that behavior was not observed in later samples.(Citation: Lookout-BrainTest)",
@@ -11984,24 +11290,6 @@
             "type": "relationship",
             "modified": "2020-05-04T15:38:57.124Z",
             "created": "2017-10-25T14:48:53.735Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--a7cc0168-247d-4a6d-b6f4-d5a04f99216c",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--b928b94a-4966-4e2a-9e61-36505b896ebc",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--0d95940f-9583-4e0f-824c-a42c1be47fad",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -12687,24 +11975,6 @@
             "x_mitre_version": "1.0"
         },
         {
-            "id": "relationship--cc49561f-8364-4908-9111-ad3a6dcd922c",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--11bd699b-f2c2-4e48-bf46-fb3f8acd9799",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--0d95940f-9583-4e0f-824c-a42c1be47fad",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "relationship--4f366c8c-9c70-44ed-baa8-d433d5dbfe49",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "description": "[Pegasus for Android](https://attack.mitre.org/software/S0316) accesses call logs.(Citation: Lookout-PegasusAndroid)",
@@ -12854,42 +12124,6 @@
             "source_ref": "malware--3c3b55a6-c3e9-4043-8aae-283fe96220c0",
             "relationship_type": "uses",
             "target_ref": "attack-pattern--53263a67-075e-48fa-974b-91c5b5445db7",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--c3c2bf20-fa33-4af4-92ec-d60679e1d4ee",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--1f96d624-8409-4472-ad8a-30618ee6b2e2",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--53263a67-075e-48fa-974b-91c5b5445db7",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--7e00d3ac-a97a-4db0-9699-7474d81413a8",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--a21a6a79-f9a1-4c87-aed9-ba2d79536881",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--d9db3d46-66ca-44b4-9daa-1ef97cb7465a",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -13752,24 +12986,6 @@
             "x_mitre_version": "1.0"
         },
         {
-            "id": "relationship--3ae62d66-6405-413f-86e3-ccdb66fac7ba",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--e30cc912-7ea1-4683-9219-543b86cbdec9",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--d9db3d46-66ca-44b4-9daa-1ef97cb7465a",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "relationship--4fc45b06-287d-4151-9f5a-37bb34dcdeec",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "description": "[MazarBOT](https://attack.mitre.org/software/S0303) is delivered via an unsolicited text message containing a link to a web download URI.(Citation: Tripwire-MazarBOT)",
@@ -13841,24 +13057,6 @@
             "type": "relationship",
             "modified": "2020-06-24T15:08:18.503Z",
             "created": "2018-10-17T00:14:20.652Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--ac53e382-a140-4bbf-a59d-db3fe21acfaa",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--a9cab8f6-4c94-4c9b-9e7d-9d863ff53431",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--fd339382-bfec-4bf0-8d47-1caedc9e7e57",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -14033,60 +13231,6 @@
             "x_mitre_version": "1.0"
         },
         {
-            "id": "relationship--01965668-d033-4aca-a8e5-71a07070e266",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--45dcbc83-4abc-4de1-b643-e528d1e9df09",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--dfe29258-ce59-421c-9dee-e85cb9fa90cd",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--79f04c05-8299-4e5e-b4c1-3f82637fa47a",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--f9e4f526-ac9d-4df5-8949-833a82a1d2df",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--0d95940f-9583-4e0f-824c-a42c1be47fad",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--c53170a0-ca7f-4827-9c3c-1803ecd131f9",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "type": "relationship",
-            "modified": "2018-10-17T00:14:20.652Z",
-            "created": "2018-10-17T00:14:20.652Z",
-            "source_ref": "attack-pattern--831e3269-da49-48ac-94dc-948008e8fd16",
-            "relationship_type": "revoked-by",
-            "target_ref": "attack-pattern--d9db3d46-66ca-44b4-9daa-1ef97cb7465a",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
             "id": "relationship--68e5789c-9f60-421e-9c79-fae207a29e83",
             "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
             "description": "[Android/Chuli.A](https://attack.mitre.org/software/S0304) stole SMS message content.(Citation: Kaspersky-WUC)",
@@ -14210,25 +13354,6 @@
             "source_ref": "malware--6447e3a1-ef4d-44b1-99d5-6b1c4888674f",
             "relationship_type": "uses",
             "target_ref": "attack-pattern--f981d199-2720-467e-9dc9-eea04dbe05cf",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "id": "relationship--55f12292-dc9d-4bfd-9de9-2d07cd67b044",
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "description": "Android 7.0 and higher includes additional protections against this technique.",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "source_ref": "course-of-action--0beabf44-e8d8-4ae4-9122-ef56369a2564",
-            "relationship_type": "mitigates",
-            "target_ref": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
-            "type": "relationship",
-            "modified": "2019-07-29T13:57:09.300Z",
-            "created": "2017-10-25T14:48:53.734Z",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -15588,25 +14713,6 @@
             "type": "relationship",
             "modified": "2020-04-27T16:52:49.629Z",
             "created": "2019-07-16T14:33:12.178Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "source_ref": "course-of-action--649f7268-4c12-483b-ac84-4b7bca9fe2ee",
-            "target_ref": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
-            "relationship_type": "mitigates",
-            "description": "An EMM/MDM can use the Android `DevicePolicyManager.setPermittedAccessibilityServices` method to whitelist applications that are allowed to use Android's accessibility features.",
-            "id": "relationship--fbd2d4f7-96ff-4624-a567-d4882f0c10ca",
-            "type": "relationship",
-            "modified": "2020-03-30T14:03:43.920Z",
-            "created": "2019-07-23T15:35:23.530Z",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -18986,25 +18092,6 @@
                 "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
             ],
             "source_ref": "course-of-action--1553b156-6767-47f7-9eb4-2a692505666d",
-            "target_ref": "attack-pattern--2204c371-6100-4ae0-82f3-25c07c29772a",
-            "description": "Enterprises could perform app vetting before allowing apps to be installed on devices and search for abuse of accessibility features as part of the analysis, or otherwise use mobile app reputation services to search for known malicious apps.",
-            "relationship_type": "mitigates",
-            "id": "relationship--e8dac11f-8c51-4b80-9ada-db15ff5f1114",
-            "type": "relationship",
-            "modified": "2020-03-30T14:03:43.942Z",
-            "created": "2019-10-18T15:11:37.091Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "source_ref": "course-of-action--1553b156-6767-47f7-9eb4-2a692505666d",
             "target_ref": "attack-pattern--82f04b1e-5371-4a6f-be06-411f0f43b483",
             "external_references": [
                 {
@@ -19396,37 +18483,6 @@
             "type": "relationship",
             "modified": "2020-05-04T15:38:57.137Z",
             "created": "2019-10-18T15:11:37.282Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "source_ref": "course-of-action--1553b156-6767-47f7-9eb4-2a692505666d",
-            "target_ref": "attack-pattern--8f142a25-f6c3-4520-bd50-2ae3ab50ed3e",
-            "external_references": [
-                {
-                    "url": "https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html",
-                    "description": "Apple. (n.d.). Support Universal Links. Retrieved December 21, 2016.",
-                    "source_name": "Apple-UniversalLinks"
-                },
-                {
-                    "source_name": "IETF-OAuthNativeApps",
-                    "description": "W. Denniss and J. Bradley. (2017, October). IETF RFC 8252: OAuth 2.0 for Native Apps. Retrieved November 30, 2018.",
-                    "url": "https://tools.ietf.org/html/rfc8252"
-                }
-            ],
-            "description": "Check for potential malicious definitions of URL schemes when vetting applications. Also, when examining apps for potential vulnerabilities, encourage use of universal links as an alternative to URL schemes. When examining apps that use OAuth, encourage use of best practices.(Citation: Apple-UniversalLinks)(Citation: IETF-OAuthNativeApps)",
-            "relationship_type": "mitigates",
-            "id": "relationship--2e58b22f-b889-49fd-bbe1-37a907a5fcb1",
-            "type": "relationship",
-            "modified": "2020-10-23T15:05:40.932Z",
-            "created": "2019-10-18T15:11:37.264Z",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
@@ -28871,24 +27927,6 @@
             "type": "relationship",
             "modified": "2020-10-01T12:43:42.238Z",
             "created": "2020-09-30T14:48:16.522Z",
-            "spec_version": "2.1",
-            "x_mitre_domains": [
-                "mobile-attack"
-            ],
-            "x_mitre_version": "1.0"
-        },
-        {
-            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
-            "object_marking_refs": [
-                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
-            ],
-            "source_ref": "attack-pattern--8f142a25-f6c3-4520-bd50-2ae3ab50ed3e",
-            "target_ref": "attack-pattern--77e30eee-fd48-40b4-99ec-73e97c158b58",
-            "relationship_type": "revoked-by",
-            "id": "relationship--39f46abc-d9e3-463d-9340-3bc8334af314",
-            "type": "relationship",
-            "modified": "2020-10-23T15:05:40.967Z",
-            "created": "2020-10-23T15:05:40.967Z",
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
