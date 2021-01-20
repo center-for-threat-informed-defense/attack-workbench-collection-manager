@@ -50,7 +50,7 @@ function runCheckCollectionIndexes() {
                                         logger.info('The retrieved collection index is newer. Updating collection index in workbench.');
                                         collectionIndex.collection_index = remoteCollectionIndex;
                                         collectionIndex.workspace.update_policy.last_retrieval = new Date(now).toISOString();
-
+                                        
                                         collectionIndexesService.updateWorkbench(collectionIndex, function(err) {
                                             if (err) {
                                                 logger.error('Unable to update collection index in workbench. ' + err);
@@ -62,7 +62,7 @@ function runCheckCollectionIndexes() {
                                         });
                                     }
                                     else {
-                                        collectionIndex.workspace.update_policy.last_retrieval = now;
+                                        collectionIndex.workspace.update_policy.last_retrieval = new Date(now).toISOString();
                                         collectionIndexesService.updateWorkbench(collectionIndex, function(err) {
                                             if (err) {
                                                 logger.error('Unable to update collection index in workbench. ' + err);
