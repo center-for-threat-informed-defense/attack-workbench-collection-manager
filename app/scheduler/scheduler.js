@@ -131,11 +131,29 @@ function subscriptionHandler(collectionIndex, callback) {
             if (collections.length === 0 || collections[0].stix.modified < collectionInfo.versions[0].modified) {
                 console.log('need to import new version');
                 collectionsService.retrieveByUrl(collectionInfo.versions[0].url, function(err, collectionBundle) {
-                    console.log(`Downloaded updated collection bundle with timestamp ${ collectionBundle.}`)
+                    console.log(`Downloaded updated collection bundle with id ${ collectionBundle.id }`);
+
+                    collectionsService.importToWorkbench(collectionBundle, function (err, importedCollection) {
+                        if (err) {
+                            console.log(err);
+                            return callback2(err);
+                        }
+                        else {
+                            const total =
+                                importedCollection.workspace.import_categories.additions.length +
+                                importedCollection.workspace.import_categories.changes.length +
+                                importedCollection.workspace.import_categories.minor_changes.length +
+                                importedCollection.workspace.import_categories.duplicates.length;
+                            console.log(`Imported collection with id ${ importedCollection.stix.id } (${ total } objects)`);
+                            return callback2();
+                        }
+                    })
                 })
             }
-
-            return callback2();
+            else {
+                console.log('do not need to import new version');
+                return callback2();
+            }
         })
     },
         function(err) {
