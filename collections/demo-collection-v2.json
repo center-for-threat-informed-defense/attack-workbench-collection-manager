@@ -1,0 +1,97 @@
+{
+    "type": "bundle",
+    "id": "bundle--4ee91158-54a2-4744-8722-be32f062b9e8",
+    "spec_version": "2.1",
+    "objects": [
+        {
+            "type": "x-mitre-collection",
+            "id": "x-mitre-collection--90d5d8d4-52bc-4bf8-8a0f-6bfebdf7d75e",
+            "spec_version": "2.1",
+            "name": "Zoo ATT&CK",
+            "x_mitre_version": "2.0.0",
+            "description": "Version 2.0.0 of the Zoo ATT&CK demo data",
+            "created_by_ref": "identity--ed972537-1fbe-4467-8868-8bfd8fd97180",
+            "created": "2018-01-16T19:15:30.610172Z",
+            "modified": "2021-01-17T10:41:41.536219Z",
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_contents": [
+                {
+                    "object_ref": "attack-pattern--91e316e1-87cf-4637-95f5-fa516823a1d3",
+                    "object_modified": "2021-01-17T00:14:20.652Z"
+                },
+                {
+                    "object_ref": "attack-pattern--48fdcc02-29fa-4f01-a2a4-6520a1187580",
+                    "object_modified": "2020-12-17T00:14:20.652Z"
+                }
+            ]
+        },
+        {
+            "id": "attack-pattern--91e316e1-87cf-4637-95f5-fa516823a1d3",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Infiltration by Ambassador Llamas",
+            "description": "Organizations may pose their infiltration llamas as ambassadors to trick zoo security systems. \n\nThis has recently been observed in the Bronx zoo where ambassador llamas stole information about the zoo's secret _spacebeaver_ program.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T9998",
+                    "external_id": "T9998"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_platforms": [
+                "Zoo"
+            ],
+            "x_mitre_version": "2.0",
+            "type": "attack-pattern",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "modified": "2021-01-17T00:14:20.652Z",
+            "created": "2017-10-20T14:48:17.176Z",
+            "spec_version": "2.1",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ]
+        },
+        {
+            "id": "attack-pattern--48fdcc02-29fa-4f01-a2a4-6520a1187580",
+            "created_by_ref": "identity--c78cb6e5-0c4b-4611-8297-d1b8b55e40b5",
+            "name": "Exfiltration by Combat Wombats",
+            "description": "Organizations may use combat wombats for exfiltration of zoo data.",
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T9999",
+                    "external_id": "T9999"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168"
+            ],
+            "x_mitre_platforms": [
+                "Zoo"
+            ],
+            "x_mitre_version": "1.0",
+            "type": "attack-pattern",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "exfiltration"
+                }
+            ],
+            "modified": "2020-12-17T00:14:20.652Z",
+            "created": "2017-10-25T14:48:17.176Z",
+            "spec_version": "2.1",
+            "x_mitre_domains": [
+                "enterprise-attack"
+            ]
+        }
+    ]
+}
