@@ -12,8 +12,8 @@ const config = require('../config/config');
 const router = express.Router();
 
 // Parse the request body
-router.use('/api', bodyParser.json({ limit: '1mb' }));
-router.use('/api', bodyParser.urlencoded({ limit: '1mb', extended: true }));
+router.use('/cm-api', bodyParser.json({ limit: '1mb' }));
+router.use('/cm-api', bodyParser.urlencoded({ limit: '1mb', extended: true }));
 
 try {
     // Setup request validation
@@ -28,8 +28,8 @@ try {
 }
 
 // Set up the routes
-router.use('/api', collectionsRoutes);
-router.use('/api', collectionIndexesRoutes);
+router.use('/cm-api', collectionsRoutes);
+router.use('/cm-api', collectionIndexesRoutes);
 
 // Handle errors that haven't otherwise been caught
 router.use(errorHandler.bodyParser);
