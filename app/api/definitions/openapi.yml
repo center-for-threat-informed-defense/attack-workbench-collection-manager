@@ -19,7 +19,7 @@ tags:
     description: 'Operations on collections.'
 
 paths:
-  /api/collection-indexes/remote:
+  /cm-api/collection-indexes/remote:
     get:
       summary: 'Retrieve collection index by URL'
       operationId: collection-indexes-get-by-url
@@ -38,7 +38,7 @@ paths:
         '200':
           description: 'A collection index.'
 
-  /api/collection-indexes/{id}/refresh:
+  /cm-api/collection-indexes/{id}/refresh:
     post:
       summary: 'Refresh a collection index'
       operationId: collection-indexes-refresh
@@ -56,7 +56,7 @@ paths:
         '200':
           description: 'The collection index was refreshed.'
 
-  /api/collections/remote:
+  /cm-api/collections/remote:
     get:
       summary: 'Retrieve collection by URL'
       operationId: collections-get-by-url

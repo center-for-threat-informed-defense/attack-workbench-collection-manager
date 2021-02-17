@@ -28,7 +28,6 @@ function runCheckCollectionIndexes() {
             logger.error('Unable to get existing collection indexes: ' + err);
         }
         else {
-            logger.info(`Retrieved ${collectionIndexes.length} collection indexes`);
             async.each(collectionIndexes, function(collectionIndex, callback) {
                     if (collectionIndex.collection_index && collectionIndex.workspace.update_policy.automatic) {
                         // Is it time to retrieve the collection index from the remote URL?
@@ -58,6 +57,7 @@ function runCheckCollectionIndexes() {
                                                 return callback(err);
                                             }
                                             else {
+                                                // Check subscribed collections
                                                 subscriptionHandler(collectionIndex, function(err) {
                                                     return callback();
                                                 });
@@ -72,6 +72,7 @@ function runCheckCollectionIndexes() {
                                                 return callback(err);
                                             }
                                             else {
+                                                // Check subscribed collections
                                                 subscriptionHandler(collectionIndex, function(err) {
                                                     return callback();
                                                 });
@@ -115,6 +116,7 @@ function subscriptionHandler(collectionIndex, callback) {
                 }
 
                 if (collections.length === 0 || collections[0].stix.modified < collectionInfo.versions[0].modified) {
+                    logger.info(`Retrieving collection bundle from remote url ${ collectionInfo.versions[0].url }`);
                     collectionsService.retrieveByUrl(collectionInfo.versions[0].url, function(err, collectionBundle) {
                         if (err) {
                             logger.error('Unable to retrieve updated collection bundle. ' + err);
