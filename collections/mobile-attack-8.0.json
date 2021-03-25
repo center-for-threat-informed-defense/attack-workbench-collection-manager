@@ -28583,7 +28583,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--f6ac21b6-2592-400c-8472-10d0e2f1bfaf",
@@ -28628,7 +28629,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -28667,7 +28669,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--08784a9d-09e9-4dce-a839-9612398214e8",
@@ -28707,7 +28710,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--a3dad2be-ce62-4440-953b-00fbce7aba93",
@@ -28747,7 +28751,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--d05f7357-4cbe-47ea-bf83-b8604226d533",
@@ -28787,7 +28792,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -28826,7 +28832,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--e13d084c-382f-40fd-aa9a-98d69e20301e",
@@ -28871,7 +28878,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -28916,7 +28924,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -28955,7 +28964,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--d1c600f8-0fb6-4367-921b-85b71947d950",
@@ -28995,7 +29005,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--89c3dbf6-f281-41b7-be1d-a0e641014853",
@@ -29035,7 +29046,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--366c800f-97a8-48d5-b0a6-79d00198252a",
@@ -29080,7 +29092,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29118,7 +29131,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--317a2c10-d489-431e-b6b2-f0251fddc88e",
@@ -29158,7 +29172,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29193,7 +29208,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--ff742eeb-1f90-4f5a-8b92-9d40fffd99ca",
@@ -29233,7 +29249,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--05c4f87c-be8f-46ea-8d9a-2a0aad8f52c1",
@@ -29278,7 +29295,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--507fe748-5e4a-4b45-9e9f-8b1115f4e878",
@@ -29319,7 +29337,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--22b596a6-d288-4409-8520-5f2846f85514",
@@ -29354,7 +29373,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29389,7 +29409,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29434,7 +29455,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29472,7 +29494,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "created": "2018-01-16T16:13:52.465Z",
@@ -29537,7 +29560,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--6146be90-470c-4049-bb3a-9986b8ffb65b",
@@ -29576,7 +29600,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29611,7 +29636,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--20d56cd6-8dff-4871-9889-d32d254816de",
@@ -29666,7 +29692,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29701,7 +29728,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--c8770c81-c29f-40d2-a140-38544206b2b4",
@@ -29741,7 +29769,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--6447e3a1-ef4d-44b1-99d5-6b1c4888674f",
@@ -29781,7 +29810,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -29816,7 +29846,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--172444ab-97fc-4d94-b142-179452bfb760",
@@ -29856,7 +29887,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--3bc1f0ad-ef11-4afc-83c0-fcffe08d4e50",
@@ -29896,7 +29928,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--52c994fa-b6c8-45a8-9586-a4275cf19307",
@@ -29951,7 +29984,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--f9854ba6-989d-43bf-828b-7240b8a65291",
@@ -29991,7 +30025,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--5ddf81ea-2c06-497b-8c30-5f1ab89a40f9",
@@ -30031,7 +30066,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -30069,7 +30105,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--23040c15-e7d8-47b5-8c16-8fd3e0e297fe",
@@ -30109,7 +30146,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--ca4f63b9-a358-4214-bb26-8c912318cfde",
@@ -30149,7 +30187,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--2074b2ad-612e-4758-adce-7901c1b49bbc",
@@ -30189,7 +30228,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--c709da93-20c3-4d17-ab68-48cba76b2137",
@@ -30229,7 +30269,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -30268,7 +30309,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--93799a9d-3537-43d8-b6f4-17215de1657c",
@@ -30318,7 +30360,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--33d9d91d-aad9-49d5-a516-220ce101ac8a",
@@ -30363,7 +30406,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--363bc05d-13cb-4e98-a5b7-e250f2bbdc2b",
@@ -30403,7 +30447,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--9ed10b5a-ff20-467f-bf2f-d3fbf763e381",
@@ -30443,7 +30488,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -30478,7 +30524,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--0626c181-93cb-4860-9cb0-dff3b1c13063",
@@ -30513,7 +30560,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--936be60d-90eb-4c36-9247-4b31128432c4",
@@ -30553,7 +30601,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--c80a6bef-b3ce-44d0-b113-946e93124898",
@@ -30593,7 +30642,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--f79c01eb-2954-40d8-a819-00b342f47ce7",
@@ -30628,7 +30678,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--3a913bac-4fae-4d0e-bca8-cae452f1599b",
@@ -30668,7 +30719,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--86fc6f0c-86d9-473e-89f3-f50f3cb9319b",
@@ -30708,7 +30760,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--20dbaf05-59b8-4dc6-8777-0b17f4553a23",
@@ -30748,7 +30801,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--085eb36d-697d-4d9a-bac3-96eb879fe73c",
@@ -30788,7 +30842,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--35aae10a-97c5-471a-9c67-02c231a7a31a",
@@ -30828,7 +30883,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -30863,7 +30919,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -30903,7 +30960,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--a1867c56-8c86-455a-96ad-b0d5f7e2bc17",
@@ -30943,7 +31001,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--28e39395-91e7-4f02-b694-5e079c964da9",
@@ -30983,7 +31042,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--d89c132d-7752-4c7f-9372-954a71522985",
@@ -31023,7 +31083,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "object_marking_refs": [
@@ -31063,7 +31124,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -31112,7 +31174,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -31147,7 +31210,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--326eaf7b-5784-4f08-8fc2-61fd5d5bc5fb",
@@ -31187,7 +31251,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -31222,7 +31287,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--56660521-6db4-4e5a-a927-464f22954b7c",
@@ -31262,7 +31328,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--2740eaf6-2db2-4a40-a63f-f5b166c7059c",
@@ -31307,7 +31374,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -31342,7 +31410,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--d9e07aea-baad-4b68-bdca-90c77647d7f9",
@@ -31387,7 +31456,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--a15c9357-2be0-4836-beec-594f28b9b4a9",
@@ -31427,7 +31497,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "created": "2020-07-27T14:14:56.729Z",
@@ -31462,7 +31533,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "id": "malware--3c3b55a6-c3e9-4043-8aae-283fe96220c0",
@@ -31502,7 +31574,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
@@ -31538,7 +31611,8 @@
             "spec_version": "2.1",
             "x_mitre_domains": [
                 "mobile-attack"
-            ]
+            ],
+            "is_family": true
         },
         {
             "external_references": [
