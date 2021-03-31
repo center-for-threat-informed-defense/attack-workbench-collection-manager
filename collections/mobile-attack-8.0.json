@@ -3900,6 +3900,10 @@
                 {
                     "object_ref": "x-mitre-matrix--5104d5f0-16b7-4aec-8ae3-0a90cd5494fc",
                     "object_modified": "2020-07-02T14:18:17.535Z"
+                },
+                {
+                    "object_ref": "marking-definition--fa42a846-8d90-4e51-bc29-71d5b4802168",
+                    "object_modified": "2017-06-01T00:00:00Z"
                 }
             ]
         },
