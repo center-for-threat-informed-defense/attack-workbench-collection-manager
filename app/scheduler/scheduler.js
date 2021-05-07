@@ -20,6 +20,8 @@ exports.stopScheduler = function() {
     }
 }
 
+const scheduledSubscriptions = new Map();
+
 function runCheckCollectionIndexes() {
     logger.info('Scheduler running...');
 
@@ -58,9 +60,17 @@ function runCheckCollectionIndexes() {
                                             }
                                             else {
                                                 // Check subscribed collections
-                                                subscriptionHandler(collectionIndex, function(err) {
-                                                    return callback();
-                                                });
+                                                if (scheduledSubscriptions.has(collectionIndex.collection_index.id)) {
+                                                    logger.info(`Subscriptions for collection index ${ collectionIndex.collection_index.id } are already being checked`);
+                                                }
+                                                else {
+                                                    logger.info(`Checking Subscriptions for collection index ${ collectionIndex.collection_index.id }`);
+                                                    scheduledSubscriptions.set(collectionIndex.collection_index.id, true);
+                                                    subscriptionHandler(collectionIndex, function (err) {
+                                                        scheduledSubscriptions.delete(collectionIndex.collection_index.id);
+                                                        return callback();
+                                                    });
+                                                }
                                             }
                                         });
                                     }
@@ -73,9 +83,17 @@ function runCheckCollectionIndexes() {
                                             }
                                             else {
                                                 // Check subscribed collections
-                                                subscriptionHandler(collectionIndex, function(err) {
-                                                    return callback();
-                                                });
+                                                if (scheduledSubscriptions.has(collectionIndex.collection_index.id)) {
+                                                    logger.info(`Subscriptions for collection index ${ collectionIndex.collection_index.id } are already being checked`);
+                                                }
+                                                else {
+                                                    logger.info(`Checking Subscriptions for collection index ${ collectionIndex.collection_index.id }`);
+                                                    scheduledSubscriptions.set(collectionIndex.collection_index.id, true);
+                                                    subscriptionHandler(collectionIndex, function (err) {
+                                                        scheduledSubscriptions.delete(collectionIndex.collection_index.id);
+                                                        return callback();
+                                                    });
+                                                }
                                             }
                                         });
                                     }
