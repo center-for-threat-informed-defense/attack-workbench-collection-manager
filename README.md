@@ -1,8 +1,87 @@
 # ATT&CK Workbench Collection Manager
-- [ATT&CK Workbench Frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend): the front-end UI for the ATT&CK Workbench tool. 
-- ATT&CK Workbench Collection Manager: REST API and CLI for managing collections.
-- [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api): REST API service for storing, querying and editing ATT&CK objects.
 
+The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the ATT&CK knowledge base. 
+
+This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions. It is a Node.js application extending the functionality of the[ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) with collection-management services.
+
+The full ATT&CK Workbench application requires additional components to operate fully. In particular, The [attack-workbench-frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend) repository contains the full documentation of the scope and function of the project. See the [install and run](#install-and-run) instructions for more details about setting up the entire project.
+
+## Install and run
+
+The ATT&CK Workbench application is made up of several repositories. For the full application to operate each needs to be running at the same time. The [docker install instructions](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md) will install all components and is recommended for most deployments.
+- [ATT&CK Workbench Frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend) 
+  
+  The front-end user interface for the ATT&CK Workbench tool, and the primary interface through which the knowledge base is accessed.
+- [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)
+
+  REST API service for storing, querying and editing ATT&CK objects.
+- [ATT&CK Workbench Collection Manager](https://github.com/center-for-threat-informed-defense/attack-workbench-collection-manager)  (this repository)
+
+  REST API and services for managing collections, collection indexes, and collection subscriptions. 
+  
+  The collection manager is **not** required to be installed to use the ATT&CK Workbench, but is highly recommended. If you opt not to install the collection-manager you will not be able to import or export data from your local knowledge base. If the collection manager is not installed, set `integrations.collection_manager.enabled` to `false` in the front-end environment. See [modifying the environment](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend#modifying-the-environment) for more details.
+
+The manual install instructions in each repository describe how each component to be deployed to a separate machine or with customized settings. 
+
+### Installing using Docker
+Please refer to our [Docker install instructions](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md) for information on installing and deploying the app using Docker. The docker setup is the easiest way to deploy the application.
+
+### Manual Installation
+
+#### Requirements
+
+- [Node.js](https://nodejs.org) version `14.16.1` or greater
+
+#### Installation
+
+##### Step 1. Clone the git repository
+
+```
+git clone git@github.com:center-for-threat-informed-defense/attack-workbench-collection-manager.git
+cd attack-workbench-collection manager
+```
+
+##### Step 2. Install the dependencies
+
+The ATT&CK Workbench Collection Manager installs all dependencies within the project.
+It doesn't depend on the global installation of any modules.
+
+```
+npm install
+```
+
+##### Step 3. Configure the system
+
+The app can be configured using environment variables, a configuration file, or a combination of these methods.
+Note that any values set in a configuration file take precedence over values set using environment variables.
+
+###### Using Environment Variables
+
+| name                         | required | default            | description                                                        |
+|------------------------------|----------|--------------------|--------------------------------------------------------------------|
+| **PORT**                     | no       | `3001`             | Port the HTTP server should listen on                              |
+| **NODE_ENV**                 | no       | `development`      | Environment that the app is running in                             |
+| **WORKBENCH_HOST**           | no       | `http://localhost` | The hostname where the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) is running  |
+| **WORKBENCH_PORT**           | no       | `3000`             | The port where the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) is running   |
+| **CHECK_WORKBENCH_INTERVAL** | no       | `10`               | The frequency in seconds of synchronization with the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)   |
+
+<!-- ###### Using a Configuration File -->
+<!-- not currently supported by collection manager -->
+
+
+##### Step 4. Run the app
+
+```
+node ./bin/www
+```
+
+## Collection Manager Documentation
+
+When running with the NODE_ENV environment variable set to `development`, the app hosts a description of the Collection Manager using the Swagger UI module.
+The Collection Manager documentation can be viewed using a browser at the path `/api-docs`.
+For a basic installation on the local machine the documentation is at:
+
+http://localhost:3001/api-docs
 ## Scripts
 
 `package.json` contains a number of scripts that can be used to perform recurring tasks.
@@ -26,14 +105,14 @@ This will check the modules for known security flaws.
 
 Note that this requires the `SNYK_TOKEN` environment variable to be set to a valid Snyk token to run.
 
-### Generate REST API Documentation
+### Generate Collection Manager Documentation
 
-The REST API is defined using OpenAPI.
+The Collection Manager is defined using OpenAPI.
 Use the command:
 
 `npm run api:generate-all`
 
-to generate the website that documents the REST API.
+to generate the website that documents the Collection Manager.
 
 ## Notice 
 
