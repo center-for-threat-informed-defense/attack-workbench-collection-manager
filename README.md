@@ -11,7 +11,7 @@ The ATT&CK Workbench application requires additional components for full operati
 When running with the NODE_ENV environment variable set to `development`, the app hosts a description of the Collection Manager using the Swagger UI module.
 The Collection Manager documentation can be viewed using a browser at the path `/api-docs`.
 
-For a basic installation on the local machine this documentation can be accessed at http://localhost:3001/api-docs
+For a basic installation on the local machine this documentation can be accessed at `http://localhost:3001/api-docs`.
 
 The [docs](/docs/README.md) folder contains additional documentation about using the Collection Manager:
 - [standalone docker installation](/docs/docker.md): instructions for setting up the Collection Manager via docker. Note that this is not the same as the full [ATT&CK Workbench Docker Installation](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md).
