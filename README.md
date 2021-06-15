@@ -2,9 +2,9 @@
 
 The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the ATT&CK knowledge base. 
 
-This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions. It is a Node.js application extending the functionality of the[ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) with collection-management services.
+This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions. It is a Node.js application extending the functionality of the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) with collection-management services.
 
-The full ATT&CK Workbench application requires additional components to operate fully. In particular, The [attack-workbench-frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend) repository contains the full documentation of the scope and function of the project. See the [install and run](#install-and-run) instructions for more details about setting up the entire project.
+The ATT&CK Workbench application requires additional components for full operation. The [ATT&CK Workbench Frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend) repository contains the full documentation of the scope and function of the project. See the [install and run](#install-and-run) instructions for more details about setting up the entire project.
 
 ## Install and run
 
