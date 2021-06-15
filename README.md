@@ -6,6 +6,16 @@ This repository contains the REST API and services for managing collections, col
 
 The ATT&CK Workbench application requires additional components for full operation. The [ATT&CK Workbench Frontend](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend) repository contains the full documentation of the scope and function of the project. See the [install and run](#install-and-run) instructions for more details about setting up the entire project.
 
+## Collection Manager Documentation
+
+When running with the NODE_ENV environment variable set to `development`, the app hosts a description of the Collection Manager using the Swagger UI module.
+The Collection Manager documentation can be viewed using a browser at the path `/api-docs`.
+
+For a basic installation on the local machine this documentation can be accessed at http://localhost:3001/api-docs
+
+The [docs](/docs/README.md) folder contains additional documentation about using the Collection Manager:
+- [standalone docker installation](/docs/docker.md): instructions for setting up the Collection Manager via docker. Note that this is not the same as the full [ATT&CK Workbench Docker Installation](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md).
+
 ## Install and run
 
 The ATT&CK Workbench application is made up of several repositories. For the full application to operate each needs to be running at the same time. The [docker install instructions](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md) will install all components and is recommended for most deployments.
@@ -75,13 +85,6 @@ Note that any values set in a configuration file take precedence over values set
 node ./bin/www
 ```
 
-## Collection Manager Documentation
-
-When running with the NODE_ENV environment variable set to `development`, the app hosts a description of the Collection Manager using the Swagger UI module.
-The Collection Manager documentation can be viewed using a browser at the path `/api-docs`.
-For a basic installation on the local machine the documentation is at:
-
-http://localhost:3001/api-docs
 ## Scripts
 
 `package.json` contains a number of scripts that can be used to perform recurring tasks.
