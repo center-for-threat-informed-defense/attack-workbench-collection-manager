@@ -65,9 +65,9 @@ Note that any values set in a configuration file take precedence over values set
 | **WORKBENCH_PORT**           | no       | `3000`             | The port where the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) is running   |
 | **CHECK_WORKBENCH_INTERVAL** | no       | `10`               | The frequency in seconds of synchronization with the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)   |
 
-<!-- ###### Using a Configuration File -->
-<!-- not currently supported by collection manager -->
+###### Using a Configuration File
 
+(TODO once Convict is added)
 
 ##### Step 4. Run the app
 
