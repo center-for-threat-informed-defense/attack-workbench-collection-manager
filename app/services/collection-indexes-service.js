@@ -13,8 +13,6 @@ const errors = {
 };
 exports.errors = errors;
 
-const workbenchUrl = config.workbench.restApiHost + ':' + config.workbench.restApiPort;
-
 exports.retrieveByUrl = function(url, callback) {
     if (!url) {
         const error = new Error(errors.missingParameter);
@@ -57,7 +55,7 @@ exports.refresh = function(id, callback) {
 };
 
 exports.retrieveFromWorkbench = function(callback) {
-    const getCollectionIndexesUrl = workbenchUrl + '/api/collection-indexes';
+    const getCollectionIndexesUrl = config.workbench.restApiBaseUrl + '/api/collection-indexes';
     superagent
         .get(getCollectionIndexesUrl)
         .end((err, res) => {
@@ -86,7 +84,7 @@ exports.retrieveFromWorkbench = function(callback) {
 }
 
 exports.updateWorkbench = function(collectionIndex, callback) {
-    const putCollectionIndexesUrl = workbenchUrl + '/api/collection-indexes/' + collectionIndex.collection_index.id;
+    const putCollectionIndexesUrl = config.workbench.restApiBaseUrl + '/api/collection-indexes/' + collectionIndex.collection_index.id;
     superagent
         .put(putCollectionIndexesUrl)
         .send(collectionIndex)
