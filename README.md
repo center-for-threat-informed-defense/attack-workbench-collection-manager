@@ -67,17 +67,42 @@ Note that any values set in a configuration file take precedence over values set
 
 ###### Using Environment Variables
 
-| name                         | required | default            | description                                                        |
-|------------------------------|----------|--------------------|--------------------------------------------------------------------|
-| **PORT**                     | no       | `3001`             | Port the HTTP server should listen on                              |
-| **NODE_ENV**                 | no       | `development`      | Environment that the app is running in                             |
-| **WORKBENCH_HOST**           | no       | `http://localhost` | The hostname where the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) is running  |
-| **WORKBENCH_PORT**           | no       | `3000`             | The port where the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) is running   |
-| **CHECK_WORKBENCH_INTERVAL** | no       | `10`               | The frequency in seconds of synchronization with the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)   |
+| name                            | required | default                 | description                                                        |
+|---------------------------------|----------|-------------------------|--------------------------------------------------------------------|
+| **PORT**                        | no       | `3001`                  | Port the HTTP server should listen on                              |
+| **ENABLE_CORS_ANY_ORIGIN**      | no       | `true`                  | Allows requests from any domain to access the REST API endpoints   |
+| **NODE_ENV**                    | no       | `development`           | Environment that the app is running in                             |
+| **WORKBENCH_REST_API_BASE_URL** | no       | `http://localhost:3000` | Base URL for the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)  |
+| **CHECK_WORKBENCH_INTERVAL**    | no       | `10`                    | The frequency in seconds of synchronization with the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api)   |
+| **JSON_CONFIG_PATH**            | no       | ``                      | Location of a JSON file containing configuration values            |
 
 ###### Using a Configuration File
 
-(TODO once Convict is added)
+If the `JSON_CONFIG_PATH` environment variable is set, the app will also read configuration settings from a JSON file at that location.
+
+| name                                 | type     | corresponding environment variable |
+|--------------------------------------|----------|------------------------------------|
+| **server.port**                      | int      | PORT                               |
+| **server.enableCorsAnyOrigin**       | boolean  | ENABLE_CORS_ANY_ORIGIN             |
+| **app.env**                          | string   | NODE_ENV                           |
+| **workbench.restApiBaseUrl**         | string   | WORKBENCH_REST_API_BASE_URL        |
+| **scheduler.checkWorkbenchInterval** | int      | CHECK_WORKBENCH_INTERVAL           |
+
+Sample configuration file setting the server port and database url:
+
+```json
+{
+  "server": {
+    "port": 4001
+  },
+  "workbench": {
+    "restApiBaseUrl": "http://localhost:4000"
+  },
+  "scheduler": {
+    "checkWorkbenchInterval": 60
+  }
+}
+```
 
 ##### Step 4. Run the app
 
@@ -107,15 +132,6 @@ to run the Snyk validator on the currently installed modules.
 This will check the modules for known security flaws.
 
 Note that this requires the `SNYK_TOKEN` environment variable to be set to a valid Snyk token to run.
-
-### Generate Collection Manager Documentation
-
-The Collection Manager is defined using OpenAPI.
-Use the command:
-
-`npm run api:generate-all`
-
-to generate the website that documents the Collection Manager.
 
 ## Notice 
 
