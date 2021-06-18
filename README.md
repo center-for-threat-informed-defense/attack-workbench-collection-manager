@@ -1,6 +1,6 @@
-# ATT&CK® Workbench Collection Manager
+# ATT&CK Workbench Collection Manager
 
-The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the ATT&CK knowledge base. 
+The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the MITRE ATT&CK® knowledge base. 
 
 This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions. It is a Node.js application extending the functionality of the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) with collection-management services.
 
