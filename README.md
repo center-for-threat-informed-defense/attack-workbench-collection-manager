@@ -15,6 +15,7 @@ For a basic installation on the local machine this documentation can be accessed
 
 The [docs](/docs/README.md) folder contains additional documentation about using the Collection Manager:
 - [standalone docker installation](/docs/docker.md): instructions for setting up the Collection Manager via docker. Note that this is not the same as the full [ATT&CK Workbench Docker Installation](https://github.com/center-for-threat-informed-defense/attack-workbench-frontend/blob/master/docs/docker-compose.md).
+- [contributing](/docs/contributing.md): information about how to contribute to this project.
 
 ## Install and run
 
