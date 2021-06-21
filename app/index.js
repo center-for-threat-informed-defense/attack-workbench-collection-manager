@@ -14,9 +14,14 @@ exports.initializeApp = async function() {
     const app = express();
 
     // Allow CORS
-    // TBD: Configure CORS for a specific origin
-    const cors = require('cors');
-    app.use(cors());
+    if (config.server.enableCorsAnyOrigin) {
+        logger.info('CORS is enabled');
+        const cors = require('cors');
+        app.use(cors());
+    }
+    else {
+        logger.info('CORS is not enabled');
+    }
 
     // Compress response bodies
     const compression = require('compression');
@@ -37,9 +42,6 @@ exports.initializeApp = async function() {
         const yaml = require('yamljs');
         const openApiDoc = yaml.load(config.openApi.specPath);
         app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openApiDoc));
-
-        // DO NOT ALLOW TO GO TO PRODUCTION
-        process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
     }
 
     // Set up the static routes

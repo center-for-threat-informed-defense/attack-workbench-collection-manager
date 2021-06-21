@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
-  title: ATT&CK Workbench Collection Manager
-  version: 0.0.1
+  title: 'ATT&CK Workbench Collection Manager'
+  version: 1.0.0
 servers:
   - url: '{protocol}://{hostname}:{port}/'
     variables:

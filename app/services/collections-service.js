@@ -13,8 +13,6 @@ const errors = {
 };
 exports.errors = errors;
 
-const workbenchUrl = config.workbench.restApiHost + ':' + config.workbench.restApiPort;
-
 exports.retrieveByUrl = function(url, callback) {
     if (!url) {
         const error = new Error(errors.missingParameter);
@@ -50,7 +48,7 @@ exports.retrieveByUrl = function(url, callback) {
 
 exports.retrieveFromWorkbench = function(id, callback) {
     // Retrieve an x-mitre-collection object
-    const getCollectionUrl = workbenchUrl + '/api/collections/' + id + '?versions=all';
+    const getCollectionUrl = config.workbench.restApiBaseUrl + '/api/collections/' + id + '?versions=all';
     superagent
         .get(getCollectionUrl)
         .end((err, res) => {
@@ -79,7 +77,7 @@ exports.retrieveFromWorkbench = function(id, callback) {
 }
 
 exports.importToWorkbench = function(collectionBundle, callback) {
-    const importCollectionBundleUrl = workbenchUrl + '/api/collection-bundles';
+    const importCollectionBundleUrl = config.workbench.restApiBaseUrl + '/api/collection-bundles';
     superagent
         .post(importCollectionBundleUrl)
         .send(collectionBundle)

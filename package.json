@@ -1,10 +1,10 @@
 {
   "name": "attack-workbench-collection-manager",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Collection Manager for the ATT&CK Workbench.",
   "main": "index.js",
   "scripts": {
-    "api:generate-md": "widdershins ./app/api/definitions/api.yml -o ./app/api/markdown/api.md --summary",
+    "api:generate-md": "widdershins ./app/api/definitions/openapi.yml -o ./app/api/markdown/api.md --summary",
     "api:generate-html": "shins --root ./app/api/web -o ./app/api/web/index.html ./app/api/markdown/api.md",
     "api:generate-all": "npm run api:generate-md && npm run api:generate-html",
     "lint": "eslint .",
@@ -15,6 +15,7 @@
     "async": "^3.2.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
+    "convict": "^6.1.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-openapi-validator": "^4.2.0",

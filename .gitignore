@@ -138,3 +138,10 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
+
+# Certificate files
+certs/
+*.crt
+*.pem
+*.pfx
+*.cer
