@@ -41,8 +41,14 @@ exports.retrieveByUrl = function(url, callback) {
                 }
             }
             else {
-                const collectionIndex = res.body;
-                return callback(null, collectionIndex);
+                try {
+                    // Parsing res.text handles both the content-type text/plain and application/json use cases
+                    const collectionIndex = JSON.parse(res.text);
+                    return callback(null, collectionIndex);
+                }
+                catch (err) {
+                    return callback(err);
+                }
             }
         });
 }
