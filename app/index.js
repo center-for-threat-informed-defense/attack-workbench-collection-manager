@@ -42,9 +42,6 @@ exports.initializeApp = async function() {
         const yaml = require('yamljs');
         const openApiDoc = yaml.load(config.openApi.specPath);
         app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openApiDoc));
-
-        // DO NOT ALLOW TO GO TO PRODUCTION
-        process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
     }
 
     // Set up the static routes
