@@ -20,7 +20,7 @@ docker network create attack-workbench-network
 ## Create and Run a Docker Container for the Collection Manager
 This command will run the Collection Manager service by creating a Docker container and starting it.
 ```shell
-docker run -p 3001:3001 -d --name attack-workbench-collection-manager --env WORKBENCH_HOST=http://attack-workbench-rest-api --network attack-workbench-network attack-workbench/collection-manager
+docker run -p 3001:3001 -d --name attack-workbench-collection-manager --env WORKBENCH_REST_API_BASE_URL=http://attack-workbench-rest-api:3000 --network attack-workbench-network attack-workbench/collection-manager
 ```
 
 ### Collection Manager Port
@@ -28,5 +28,5 @@ The Collection Manager service listens on container port 3001 by default.
 This command maps port 3001 (in the container) to port 3001 (on the host).
 
 ### ATT&CK Workbench REST API
-This command sets the `WORKBENCH_HOST` environment variable to configure the Collection Manager service to access the ATT&CK Workbench REST API running on the `attack-workbench-rest-api` host on the default port of `3000`.
+This command sets the `WORKBENCH_REST_API_BASE_URL` environment variable to configure the Collection Manager service to access the ATT&CK Workbench REST API running on the `attack-workbench-rest-api` host on the port `3000`.
 
