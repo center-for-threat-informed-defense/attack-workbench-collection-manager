@@ -1,7 +1,7 @@
 {
   "name": "attack-workbench-collection-manager",
-  "version": "1.0.0",
-  "description": "Collection Manager for the ATT&CK Workbench.",
+  "version": "1.0.1",
+  "description": "An application allowing users to explore, create, annotate, and share extensions of the MITRE ATT&CK® knowledge base. This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions.",
   "main": "index.js",
   "scripts": {
     "api:generate-md": "widdershins ./app/api/definitions/openapi.yml -o ./app/api/markdown/api.md --summary",
