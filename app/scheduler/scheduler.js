@@ -39,7 +39,8 @@ function runCheckCollectionIndexes() {
                             lastRetrieval = new Date(collectionIndex.workspace.update_policy.last_retrieval);
                         }
                         if (!lastRetrieval || (now - lastRetrieval) > (1000 * collectionIndex.workspace.update_policy.interval)) {
-                            logger.info('Retrieving collection index from remote url ' + collectionIndex.workspace.remote_url);
+                            logger.info(`Checking collection index: ${ collectionIndex.collection_index.name } (${ collectionIndex.collection_index.id })`);
+                            logger.verbose('Retrieving collection index from remote url ' + collectionIndex.workspace.remote_url);
                             collectionIndexesService.retrieveByUrl(collectionIndex.workspace.remote_url, function(err, remoteCollectionIndex) {
                                 if (err) {
                                     logger.error('Unable to retrieve collection index from remote url. ' + err);
@@ -64,7 +65,7 @@ function runCheckCollectionIndexes() {
                                                     logger.info(`Subscriptions for collection index ${ collectionIndex.collection_index.id } are already being checked`);
                                                 }
                                                 else {
-                                                    logger.info(`Checking Subscriptions for collection index ${ collectionIndex.collection_index.id }`);
+                                                    logger.verbose(`Checking Subscriptions for collection index ${ collectionIndex.collection_index.id }`);
                                                     scheduledSubscriptions.set(collectionIndex.collection_index.id, true);
                                                     subscriptionHandler(collectionIndex, function (err) {
                                                         scheduledSubscriptions.delete(collectionIndex.collection_index.id);
@@ -75,6 +76,7 @@ function runCheckCollectionIndexes() {
                                         });
                                     }
                                     else {
+                                        logger.verbose('The retrieved collection index is not newer.')
                                         collectionIndex.workspace.update_policy.last_retrieval = new Date(now).toISOString();
                                         collectionIndexesService.updateWorkbench(collectionIndex, function(err) {
                                             if (err) {
@@ -116,24 +118,30 @@ function runCheckCollectionIndexes() {
 }
 
 function subscriptionHandler(collectionIndex, callback) {
+    // Check each subscription in the collection index
     async.eachSeries(collectionIndex.workspace.update_policy.subscriptions, function(collectionId, callback2) {
+            // collections is a list of the versions of the collection that are in the Workbench data store
             collectionsService.retrieveFromWorkbench(collectionId, function(err, collections) {
                 if (err) {
                     logger.error(err);
                     return callback2(err);
                 }
-                collections.sort((a, b) => b.stix.modified.localeCompare(a.stix.modified));
-                const collectionInfo = collectionIndex.collection_index.collections.find(item => item.id === collectionId);
-                if (collectionInfo) {
-                    collectionInfo.versions.sort((a, b) => b.modified.localeCompare(a.modified));
-                }
 
+                // Get the corresponding collection info from the collection index
+                // collectionInfo.versions is a list of versions that are available to be imported
+                const collectionInfo = collectionIndex.collection_index.collections.find(item => item.id === collectionId);
                 if (!collectionInfo || collectionInfo.versions.length === 0) {
                     // No versions available to import
                     return callback2();
                 }
 
+                // Order both lists of collection versions, latest version first
+                collections.sort((a, b) => b.stix.modified.localeCompare(a.stix.modified));
+                collectionInfo.versions.sort((a, b) => b.modified.localeCompare(a.modified));
+
                 if (collections.length === 0 || collections[0].stix.modified < collectionInfo.versions[0].modified) {
+                    // Latest version in collection index is later than latest version in the Workbench data store,
+                    // so we should import it
                     logger.info(`Retrieving collection bundle from remote url ${ collectionInfo.versions[0].url }`);
                     collectionsService.retrieveByUrl(collectionInfo.versions[0].url, function(err, collectionBundle) {
                         if (err) {
@@ -143,7 +151,7 @@ function subscriptionHandler(collectionIndex, callback) {
 
                         logger.info(`Downloaded updated collection bundle with id ${ collectionBundle.id }`);
 
-                        collectionsService.importToWorkbench(collectionBundle, function (err, importedCollection) {
+                        collectionsService.importIntoWorkbench(collectionBundle, function (err, importedCollection) {
                             if (err) {
                                 logger.error('Unable to import collection bundle into ATT&CK Workbench database. ' + err);
                                 return callback2(err);
@@ -156,7 +164,7 @@ function subscriptionHandler(collectionIndex, callback) {
                     })
                 }
                 else {
-                    // Don't import new version
+                    // Workbench data store is up-to-date, don't import new version
                     return callback2();
                 }
             })

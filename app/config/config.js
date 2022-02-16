@@ -2,6 +2,29 @@
 
 const convict = require('convict');
 
+const authnMechanismValues = ['apikey', 'client-credentials'];
+convict.addFormat(enumFormat('authn-mechanism', authnMechanismValues, true));
+
+// Creates a new convict format for a list of enumerated values
+function enumFormat(name, values, coerceLower) {
+    return {
+        name,
+        validate: function (val) {
+            if (!values.includes(val)) {
+                throw new Error(`Invalid ${ name } value`);
+            }
+        },
+        coerce: function (val) {
+            if (coerceLower) {
+                return val.toLowerCase();
+            }
+            else {
+                return val;
+            }
+        }
+    }
+}
+
 const config = convict({
     server: {
         port: {
@@ -26,6 +49,13 @@ const config = convict({
             env: 'NODE_ENV'
         }
     },
+    logging: {
+        logLevel: {
+            doc: 'Level of logging messages to write to console (error, warn, http, info, verbose, debug)',
+            default: 'info',
+            env: 'LOG_LEVEL'
+        }
+    },
     workbench: {
         restApiBaseUrl: {
             doc: 'ATT&CK Workbench REST API base URL',
@@ -43,6 +73,48 @@ const config = convict({
             format: 'int',
             default: 3000,
             env: 'WORKBENCH_PORT'
+        },
+        authn: {
+            mechanism: {
+                doc: 'Mechanism to use when authenticating with the Workbench REST API',
+                format: 'authn-mechanism',
+                default: 'apikey',
+                env: 'WORKBENCH_AUTHN_MECHANISM'
+            },
+            oidcClientCredentials: {
+                clientId: {
+                    doc: 'OIDC ClientId for the collection manager service',
+                    format: String,
+                    default: 'collection-manager',
+                    env: 'WORKBENCH_AUTHN_CLIENT_ID'
+                },
+                clientSecret: {
+                    doc: 'OIDC Client Secret for the collection manager service',
+                    format: String,
+                    default: '',
+                    env: 'WORKBENCH_AUTHN_CLIENT_SECRET'
+                },
+                tokenUrl: {
+                    doc: 'OIDC Identity Provider URL for requesting a token',
+                    format: String,
+                    default: '',
+                    env: 'WORKBENCH_AUTHN_TOKEN_URL'
+                }
+            },
+            apikey: {
+                serviceName: {
+                    doc: 'Name to use when authenticating',
+                    format: String,
+                    default: 'collection-manager',
+                    env: 'WORKBENCH_AUTHN_SERVICE_NAME'
+                },
+                apikey: {
+                    doc: 'apikey of this service (shared secret)',
+                    format: String,
+                    default: '',
+                    env: 'WORKBENCH_AUTHN_APIKEY'
+                }
+            }
         }
     },
     scheduler: {
