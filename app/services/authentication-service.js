@@ -104,12 +104,21 @@ async function getApikeyAccessTokenFromServer(challengeHash) {
 async function getClientCredentialsAccessTokenFromServer() {
     let accessToken;
     try {
-        const res = await request
-            .post(config.workbench.authn.oidcClientCredentials.tokenUrl)
-            .send(`client_id=${config.workbench.authn.oidcClientCredentials.clientId}`)
-            .send(`client_secret=${config.workbench.authn.oidcClientCredentials.clientSecret}`)
-            .send('grant_type=client_credentials');
+        const body = {
+            client_id: config.workbench.authn.oidcClientCredentials.clientId,
+            client_secret: config.workbench.authn.oidcClientCredentials.clientSecret,
+            grant_type: 'client_credentials'
+        };
 
+        // Some OIDC Identity Providers require scope
+        if (config.workbench.authn.oidcClientCredentials.scope) {
+            body.scope = config.workbench.authn.oidcClientCredentials.scope;
+        }
+
+        const res =  await request
+            .post(config.workbench.authn.oidcClientCredentials.tokenUrl)
+            .type('form')
+            .send(body);
         accessToken = res.body.access_token;
     }
     catch(err) {

@@ -99,6 +99,12 @@ const config = convict({
                     format: String,
                     default: '',
                     env: 'WORKBENCH_AUTHN_TOKEN_URL'
+                },
+                scope: {
+                    doc: 'OIDC scope for accessing the REST API service',
+                    format: String,
+                    default: '',
+                    env: 'WORKBENCH_AUTHN_SCOPE'
                 }
             },
             apikey: {
