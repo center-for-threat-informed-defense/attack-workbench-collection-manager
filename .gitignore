@@ -145,3 +145,6 @@ certs/
 *.pem
 *.pfx
 *.cer
+
+# Directory holding data files for testing
+/tests/integration-test/mock-remote-host/mock-data/
