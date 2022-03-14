@@ -122,7 +122,10 @@ async function getClientCredentialsAccessTokenFromServer() {
         accessToken = res.body.access_token;
     }
     catch(err) {
-        if (err.status === 400 && err?.response?.body.error_description === 'Invalid client credentials') {
+        if (err.status === 401) {
+            throw new Error(errors.invalidOidcCredentials);
+        }
+        else if (err.status === 400 && err?.response?.body.error_description === 'Invalid client credentials') {
             throw new Error(errors.invalidOidcCredentials);
         } else if (err.code === 'ECONNREFUSED') {
             throw new Error(errors.connectionRefused, { cause: err });
