@@ -1,11 +1,11 @@
 # Authentication
 
 The collection manager service must authenticate with the REST API in order to retrieve and update data.
-It can be configured to do this either using API key authentication or the OIDC Client Credentials Flow.
+It can be configured to do this either using API Key Challenge authentication or the OIDC Client Credentials Flow.
 
-### API Key Authentication
+### API Key Challenge Authentication
 
-API key authentication works by configuring both the REST API and the Collection Manager service with a secret value that is used to authenticate the service to the REST API.
+API Key Challenge authentication works by configuring both the REST API and the Collection Manager service with a secret value that is used to authenticate the service to the REST API.
 The following environment variables must be set to configure the Collection Manager service to use API key authentication: 
 
 | name                             | value                          | description                                                        |

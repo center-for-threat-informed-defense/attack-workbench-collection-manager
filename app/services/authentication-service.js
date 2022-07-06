@@ -56,7 +56,6 @@ async function getApikeyChallengeFromServer() {
  * Compute the HMAC-SHA256 hash of the challenge string using the configured API Key.
  */
 function makeChallengeHash(nonce) {
-    console.log(config.workbench.authn.apikey.apikey);
     const hmac = crypto.createHmac('sha256', config.workbench.authn.apikey.apikey);
     hmac.update(nonce);
     return hmac.digest('hex');
