@@ -1,7 +1,22 @@
 {
   "name": "attack-workbench-collection-manager",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "An application allowing users to explore, create, annotate, and share extensions of the MITRE ATT&CK® knowledge base. This repository contains the REST API and services for managing collections, collection indexes, and collection subscriptions.",
+  "keywords": [
+    "cti",
+    "cyber-threat-intelligence",
+    "attack",
+    "mitre-attack",
+    "mitre-corporation",
+    "ctid",
+    "center-for-threat-informed-defense",
+    "cybersecurity",
+    "stix"
+  ],
+  "license": {
+    "type": "Apache-2.0",
+    "url": "https://opensource.org/licenses/apache2.0.php"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -9,28 +24,28 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.4",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "convict": "^6.1.0",
+    "convict": "^6.2.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-openapi-validator": "^4.2.0",
-    "helmet": "^4.1.1",
+    "express-openapi-validator": "^4.13.8",
+    "helmet": "^4.6.0",
     "jwt-decode": "^3.1.2",
     "morgan": "^1.10.0",
-    "swagger-ui-express": "^4.1.5",
+    "swagger-ui-express": "^4.5.0",
     "superagent": "^6.1.0",
-    "uuid": "^8.3.1",
+    "uuid": "^8.3.2",
     "winston": "^3.3.3",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "eslint": "^7.11.0",
-    "expect": "^26.5.3",
+    "eslint": "^8.25.0",
+    "expect": "^29.2.1",
     "keycloak-admin-client": "^0.12.0",
-    "mocha": "^8.1.3",
-    "snyk": "^1.836.0",
-    "supertest": "^5.0.0"
+    "mocha": "^10.1.0",
+    "snyk": "^1.1040.0",
+    "supertest": "^6.3.0"
   }
 }
