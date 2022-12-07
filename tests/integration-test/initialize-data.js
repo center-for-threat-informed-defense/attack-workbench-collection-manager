@@ -2,7 +2,24 @@
 
 'use strict';
 
-const authenticatedRequest = require('../../app/lib/authenticated-request');
+const superagent = require('superagent');
+const setCookieParser = require('set-cookie-parser');
+
+const passportCookieName = 'connect.sid';
+
+let passportCookie;
+async function login(url) {
+    const res = await superagent.get(url);
+    const cookies = setCookieParser(res);
+    passportCookie = cookies.find(c => c.name === passportCookieName);
+}
+
+async function post(url, data) {
+    return await superagent
+        .post(url)
+        .set('Cookie', `${ passportCookieName }=${ passportCookie.value }`)
+        .send(data);
+}
 
 async function initializeData() {
     // Read the collection index v1 from the file
@@ -24,9 +41,13 @@ async function initializeData() {
         }
     };
 
+    // Log into the Workbench REST API
+    const loginUrl = 'http://localhost:3000/api/authn/anonymous/login';
+    await login(loginUrl);
+
     // Import the collection index v1 into the database
     const postCollectionIndexesUrl = 'http://localhost:3000/api/collection-indexes';
-    await authenticatedRequest.post(postCollectionIndexesUrl, collectionIndex);
+    await post(postCollectionIndexesUrl, collectionIndex);
 }
 
 initializeData()

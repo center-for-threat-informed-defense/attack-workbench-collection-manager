@@ -124,20 +124,12 @@ async function importIntoWorkbenchAsync(collectionBundle, callback) {
 
 exports.retrieveFromWorkbench = function(id, callback) {
     retrieveFromWorkbenchAsync(id)
-        .then((collections) => {
-            return callback(null, collections);
-        })
-        .catch((err) => {
-            return callback(err);
-        })
+        .then(collections => callback(null, collections))
+        .catch(err => callback(err));
 }
 
 exports.importIntoWorkbench = function(collectionBundle, callback) {
     importIntoWorkbenchAsync(collectionBundle)
-        .then((importedCollection) => {
-            return callback(null, importedCollection);
-        })
-        .catch((err) => {
-            return callback(err);
-        })
+        .then(importedCollection => callback(null, importedCollection))
+        .catch(err => callback(err));
 }

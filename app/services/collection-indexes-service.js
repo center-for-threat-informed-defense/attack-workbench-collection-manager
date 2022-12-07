@@ -62,9 +62,7 @@ exports.retrieveByUrl = function(url, callback) {
 
 exports.refresh = function(id, callback) {
     // Do nothing for now
-    process.nextTick(() => {
-        return callback(null, {})
-    });
+    process.nextTick(() => callback(null, {}));
 };
 
 /**
@@ -129,20 +127,12 @@ async function updateWorkbenchAsync(collectionIndex, callback) {
 
 exports.retrieveFromWorkbench = function(callback) {
     retrieveFromWorkbenchAsync()
-        .then((collectionIndexes) => {
-            return callback(null, collectionIndexes);
-        })
-        .catch((err) => {
-            return callback(err);
-        })
+        .then(collectionIndexes => callback(null, collectionIndexes))
+        .catch(err => callback(err));
 }
 
 exports.updateWorkbench = function(collectionIndex, callback) {
     updateWorkbenchAsync(collectionIndex)
-        .then(() => {
-            return callback(null);
-        })
-        .catch((err) => {
-            return callback(err);
-        })
+        .then(() => callback(null))
+        .catch(err => callback(err));
 }
