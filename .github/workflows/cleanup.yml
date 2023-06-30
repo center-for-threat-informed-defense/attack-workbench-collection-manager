@@ -1,0 +1,17 @@
+on:
+  pull_request:
+  
+jobs:
+    docker:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/delete-package-versions@v4
+            with:
+              package-version-ids: v0.2.0, v0.1.1, v0.3.0
+              package-name: ghcr.io/center-for-threat-informed-defense/center-for-threat-informed-defense/attack-workbench-collection-manager
+              package-type: container
+              num-old-versions-to-delete: 0
+              min-versions-to-keep: 0
+
+
+    
