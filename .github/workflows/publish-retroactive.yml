@@ -1,0 +1,45 @@
+name: Retroactively publish Docker image for tagged releases
+
+on:
+  pull_request:
+    branches:
+      - '*-retroactively-publish-docker-image-for-all-tagged-releases'
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      -
+        name: Check if Dockerfile exists
+        id: dockerfile
+        run: |
+          if [ ! -f Dockerfile ]; then
+            echo "No Dockerfile in this commit. Skipping this workflow run."
+            exit 1
+          fi
+      -
+        name: Get list of tags
+        id: get_tags
+        run: |
+          TAGS=$(git tag --contains HEAD)
+          echo "::set-output name=tags::$TAGS"
+      -
+        name: Validate git tag version and Build Image
+        run: |
+          for TAG in ${{ steps.get_tags.outputs.tags }}
+          do
+            VERSION=$(echo $TAG | cut -d / -f 3)
+            if [[ $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+              echo "Building and Pushing Docker Image for Tag: $VERSION"
+              echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+              docker build -t ghcr.io/center-for-threat-informed-defense/attack-workbench-rest-api:$VERSION .
+              docker push ghcr.io/center-for-threat-informed-defense/attack-workbench-rest-api:$VERSION
+            else
+              echo "Skipping Tag: $VERSION as it is not semver compliant"
+            fi
+          done
