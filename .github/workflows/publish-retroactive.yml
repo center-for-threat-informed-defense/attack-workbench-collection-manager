@@ -24,13 +24,11 @@ jobs:
         name: Get list of tags
         id: get_tags
         run: |
-          TAGS=$(git tag)
-          echo "TAGS=$TAGS" >> $GITHUB_ENV
+          git tag > tags.txt
       -
         name: Checkout and Build Images for Tags
         run: |
-          for TAG in ${{ env.TAGS }}
-          do
+          while read TAG; do
             git checkout $TAG
             VERSION=$(echo $TAG | cut -d / -f 3)
             if [[ $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
@@ -46,4 +44,4 @@ jobs:
             else
               echo "Skipping Tag: $VERSION as it is not semver compliant"
             fi
-          done
+          done < tags.txt
