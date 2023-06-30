@@ -9,7 +9,6 @@ jobs:
             with:
               package-name: ghcr.io/center-for-threat-informed-defense/center-for-threat-informed-defense/attack-workbench-collection-manager
               package-type: container
-              num-old-versions-to-delete: 100
               min-versions-to-keep: 0
 
 
