@@ -21,31 +21,28 @@ jobs:
         with:
           fetch-depth: 0
       -
-        name: Check if Dockerfile exists
-        id: dockerfile
-        run: |
-          if [ ! -f Dockerfile ]; then
-            echo "No Dockerfile in this commit. Skipping this workflow run."
-            exit 1
-          fi
-      -
         name: Get list of tags
         id: get_tags
         run: |
-          TAGS=$(git tag --contains HEAD)
-          echo "::set-output name=tags::$TAGS"
+          TAGS=$(git tag)
+          echo "TAGS=$TAGS" >> $GITHUB_ENV
       -
-        name: Validate git tag version and Build Image
+        name: Checkout and Build Images for Tags
         run: |
-          for TAG in ${{ steps.get_tags.outputs.tags }}
+          for TAG in ${{ env.TAGS }}
           do
+            git checkout $TAG
             VERSION=$(echo $TAG | cut -d / -f 3)
             if [[ $VERSION =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-              echo "Building and Pushing Docker Image for Tag: $VERSION"
-              echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
-              IMAGE_NAME="ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:$VERSION"
-              docker build -t $IMAGE_NAME .
-              docker push $IMAGE_NAME
+              if [ -f Dockerfile ]; then
+                echo "Building and Pushing Docker Image for Tag: $VERSION"
+                echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+                IMAGE_NAME="ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:$VERSION"
+                docker build -t $IMAGE_NAME .
+                docker push $IMAGE_NAME
+              else
+                echo "No Dockerfile for tag: $VERSION. Skipping this tag."
+              fi
             else
               echo "Skipping Tag: $VERSION as it is not semver compliant"
             fi
