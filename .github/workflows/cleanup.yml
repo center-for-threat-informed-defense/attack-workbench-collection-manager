@@ -1,3 +1,5 @@
+name: Remove Docker images with wrong package-name
+
 on:
   pull_request:
   
@@ -5,11 +7,13 @@ jobs:
     docker:
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/delete-package-versions@v4
-            with:
-              package-name: ghcr.io/center-for-threat-informed-defense/center-for-threat-informed-defense/attack-workbench-collection-manager
-              package-type: container
-              min-versions-to-keep: 0
+        - uses: actions/delete-package-versions@v4
+          with:
+            owner: center-for-threat-informed-defense
+            package-name: attack-workbench-collection-manager
+            package-type: container
+            min-versions-to-keep: 0
+      
 
 
     
