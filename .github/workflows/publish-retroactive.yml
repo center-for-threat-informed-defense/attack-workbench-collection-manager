@@ -35,7 +35,7 @@ jobs:
               if [ -f Dockerfile ]; then
                 echo "Building and Pushing Docker Image for Tag: $VERSION"
                 echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
-                IMAGE_NAME="ghcr.io/${{ github.repository_owner }}/${{ github.repository }}:$VERSION"
+                IMAGE_NAME="ghcr.io/${{ github.repository }}:$VERSION"
                 docker build -t $IMAGE_NAME .
                 docker push $IMAGE_NAME
               else
