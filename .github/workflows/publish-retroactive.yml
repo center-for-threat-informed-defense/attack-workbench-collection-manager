@@ -2,13 +2,19 @@ name: Retroactively publish Docker image for tagged releases
 
 on:
   pull_request:
-    branches:
-      - '*-retroactively-publish-docker-image-for-all-tagged-releases'
 
 jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      -
+        name: Check branch name
+        run: |
+            BRANCH_NAME=${GITHUB_HEAD_REF#refs/heads/}
+            if [[ ! $BRANCH_NAME == *-retroactively-publish-docker-image-for-all-tagged-releases ]]; then
+            echo "Branch name does not match the pattern. Skipping the workflow."
+            exit 1
+            fi
       -
         name: Checkout
         uses: actions/checkout@v3
