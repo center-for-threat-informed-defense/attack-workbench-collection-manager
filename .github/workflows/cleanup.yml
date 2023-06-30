@@ -10,7 +10,7 @@ jobs:
         - uses: actions/delete-package-versions@v4
           with:
             owner: center-for-threat-informed-defense
-            package-name: attack-workbench-collection-manager
+            package-name: center-for-threat-informed-defense/attack-workbench-collection-manager
             package-type: container
             min-versions-to-keep: 0
       
