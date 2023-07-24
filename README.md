@@ -1,10 +1,10 @@
+![maintenance-status](https://img.shields.io/badge/maintenance-deprecated_(August_2023)-red.svg)
+
+## DEPRECATED
+
+As of v2.0.0, the ATT&CK Workbench Collection Manager has been deprecated. All functionality of the Collection Manager has been absorbed into the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api).
+
 # ATT&CK Workbench Collection Manager
-
-```DEPRECATION WARNING```
-
-As of July 2023, the ATT&CK Workbench Collection Manager has been deprecated, with all the functionality of the Collection Manager being absorbed into the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api) since v2.0.0 of the ATT&CK Workbench REST API.
-
-```DEPRECATION WARNING```
 
 The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the MITRE ATT&CK® knowledge base. 
 
