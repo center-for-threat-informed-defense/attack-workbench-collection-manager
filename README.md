@@ -4,6 +4,8 @@
 
 As of v2.0.0, the ATT&CK Workbench Collection Manager has been deprecated. All functionality of the Collection Manager has been absorbed into the [ATT&CK Workbench REST API](https://github.com/center-for-threat-informed-defense/attack-workbench-rest-api).
 
+<hr>
+
 # ATT&CK Workbench Collection Manager
 
 The ATT&CK Workbench is an application allowing users to **explore**, **create**, **annotate**, and **share** extensions of the MITRE ATT&CK® knowledge base. 
